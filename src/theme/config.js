@@ -35,17 +35,12 @@ theme.colors = colors
 const baseFamily =
   '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif'
 
-const serif = '"Mercury A","Mercury B"'
-const serifFamily = `${serif},${baseFamily}`
-
-const sans = '"Whitney A","Whitney B"'
+const sans = 'Sailec'
 const sansFamily = `${sans},${baseFamily}`
 
 theme.font = sansFamily
-theme.serif = serifFamily
 
 theme.styles = {
-  serif: { style: { fontFamily: serifFamily } },
   sans: { style: { fontFamily: sansFamily } },
   headline: { f: [5, 6], color: 'black', style: { lineHeight: '1.125' } },
   subhline: {
