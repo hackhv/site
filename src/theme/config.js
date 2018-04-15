@@ -1,33 +1,29 @@
-import palx from 'palx'
 import { theme } from '@hackclub/design-system'
 
-export const base = '#0059ff'
-
-export const palette = palx(base)
-
-export const grays = {
-  black: palette.black,
-  slate: palette.gray[8],
-  silver: palette.gray[7],
-  smoke: palette.gray[2],
-  snow: palette.gray[0],
-  white: '#ffffff'
-}
-
-export const brand = {
-  primary: palette.pink[5],
-  accent: palette.cyan[5],
-  success: palette.teal[5],
-  info: palette.blue[5],
-  warning: palette.orange[5],
-  error: palette.red[5],
-  muted: grays.silver
-}
-
 export const colors = {
-  ...brand,
-  ...grays,
-  ...palette
+  // greyscale
+  black: '#1f2d3d',
+  steel: '#273444',
+  slate: '#3c4858',
+  muted: '#8492a6',
+  // smoke3: '#c0ccda',
+  // smoke2: '#d3dce6',
+  smoke: '#e0e6ed',
+  // snow3: '#e5e9f2',
+  // snow2: '#eff2f7',
+  snow: '#f9fafc',
+  white: '#ffffff',
+  // brand
+  primary: '#ff5a5f',
+  primaryLight: '#ff7e82',
+  primaryDark: '#e00007',
+  alt: '#007a87',
+  altLight: '#009aab',
+  altDark: '#004f58',
+  success: '#3fb34f',
+  error: '#b23f42',
+  warm: '#ffb400',
+  cool: '#00bdde'
 }
 
 theme.colors = colors
