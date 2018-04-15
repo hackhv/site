@@ -6,6 +6,11 @@
   "url": "https://camplightbulb.org",
   "twitter": "@camplightbulb",
   "img": "https://camplightbulb.org/logo.png",
+  "urls": {
+    "twitter": "https://twitter.com/camplightbulb",
+    "instagram": "https://www.instagram.com/camplightbulb",
+    "facebook": "https://www.facebook.com/camplightbulb"
+  },
   "org": {
     "@context": "http://schema.org",
     "@type": "Organization",

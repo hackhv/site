@@ -1,30 +1,6 @@
 import React from 'react'
-import {
-  Flex,
-  Box,
-  Heading,
-  Text,
-  Link as A,
-  cx
-} from '@hackclub/design-system'
-import Link from 'gatsby-link'
-
-const c1 = cx('red.5')
-const c2 = cx('orange.5')
-const c3 = cx('yellow.5')
-const c4 = cx('teal.6')
-const c5 = cx('blue.6')
-const c6 = cx('violet.6')
-
-const Base = Box.footer.extend`
-  background-image: linear-gradient(rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 5%), linear-gradient(105deg, ${c1}, ${c1} 16%, ${c2} 16%, ${c2} 32%, ${c3} 32%, ${c3} 48%, ${c4} 48%, ${c4} 64%, ${c5} 64%, ${c5} 80%, ${c6} 80%, ${c6} 100%);
-  display: grid;
-  grid-gap: ${props => props.theme.space[3]}px;
-  ${props => props.theme.mediaQueries.md} {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: ${props => props.theme.space[4]}px;
-  }
-`
+import { Flex, Box, Heading, Text, Link as A } from '@hackclub/design-system'
+import { urls } from 'data.json'
 
 const icons = {
   twitter:
@@ -41,7 +17,7 @@ const Service = ({ href, icon, ...props }) => (
     rel="noopener"
     href={href}
     mx={2}
-    color="white"
+    color="muted"
     title={icon}
     {...props}
   >
@@ -61,49 +37,18 @@ const Service = ({ href, icon, ...props }) => (
   </A>
 )
 
-const Exception = Box.extend`
-  grid-column: span 2;
-`
-
 const Footer = ({ children }) => (
-  <Base p={[4, 5]} color="white">
-    {children && <Exception children={children} />}
-    <Box>
-      <Heading.h3 mb={3} align={['left', null, 'right']}>
-        Follow Us
-      </Heading.h3>
-      <Flex
-        align="center"
-        justify={['flex-start', null, 'flex-end']}
-        mx={-2}
-        wrap
-      >
-        <Service href="https://twitter.com/camplightbulb" icon="twitter" />
-        <Service
-          href="https://www.instagram.com/camplightbulb"
-          icon="instagram"
-        />
-        <Service
-          href="https://www.facebook.com/camplightbulb"
-          icon="facebook"
-        />
-      </Flex>
-    </Box>
-    <Box>
-      <Heading.h3 mb={2}>Camp Lightbulb</Heading.h3>
-      <Box>
-        <Text mt={0}>
-          PO Box 845<br />Hollywood, CA 90078
-        </Text>
-        <Text mt={2} mb={3}>
-          Non-profit EIN number: 45-2643441
-        </Text>
-        <Text f={1} style={{ opacity: 0.8 }}>
-          © {new Date().getFullYear()} Camp Lightbulb
-        </Text>
-      </Box>
-    </Box>
-  </Base>
+  <Box.footer p={[4, 5]} bg="snow" color="muted" align="center">
+    {children}
+    <Heading.h3 f={2} mb={3} align="center" caps>
+      Follow Us
+    </Heading.h3>
+    <Flex justify="center" mx={-2} wrap>
+      <Service href={urls.twitter} icon="twitter" />
+      <Service href={urls.instagram} icon="instagram" />
+      <Service href={urls.facebook} icon="facebook" />
+    </Flex>
+  </Box.footer>
 )
 
 export default Footer
