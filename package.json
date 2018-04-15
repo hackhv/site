@@ -1,0 +1,39 @@
+{
+  "name": "@hackhappyvalley/site",
+  "description": "coming soon",
+  "version": "0.0.1",
+  "author": "Lachlan Campbell <lachlan@hackclub.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "start": "yarn run dev",
+    "fmt": "prettier \"{src/**,}/*.js\" --single-quote --no-semi --write"
+  },
+  "dependencies": {
+    "@hackclub/design-system": "^0.0.1-9",
+    "axios": "^0.18.0",
+    "gatsby": "^1.9.250",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-manifest": "^1.0.19",
+    "gatsby-plugin-netlify": "^1.0.19",
+    "gatsby-plugin-offline": "^1.0.15",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-resolve-src": "^1.1.3",
+    "gatsby-plugin-sitemap": "^1.2.21",
+    "gatsby-plugin-styled-components": "^2.0.11",
+    "lodash": "^4.17.5",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^3.2.5"
+  },
+  "devDependencies": {
+    "prettier": "^1.12.0"
+  },
+  "keywords": [
+    "gatsby"
+  ]
+}
