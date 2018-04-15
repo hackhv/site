@@ -7,7 +7,8 @@ const Base = Flex.extend.attrs({
   pt: 3,
   px: [3, 4],
   pb: 2,
-  justify: 'space-between'
+  justify: 'space-around',
+  w: 1
 })`
   position: absolute;
   top: 0;
@@ -33,9 +34,7 @@ const Nav = ({ color = 'white', ...props }) => (
     <Flag />
     <NavBar role="navigation" ml={3} py={[1, 0]} color={color} align="center">
       <Item to="/register" children="Register" />
-      <Item to="/info" children="Info" />
       <Item to="/about" children="About" />
-      <Item to="/donate" children="Donate" />
     </NavBar>
   </Base>
 )

@@ -23,7 +23,9 @@ export const colors = {
   success: '#3fb34f',
   error: '#b23f42',
   warm: '#ffb400',
-  cool: '#00bdde'
+  warmWash: '#ffdc89',
+  cool: '#00bdde',
+  coolWash: '#7cecff'
 }
 
 theme.colors = colors
@@ -37,7 +39,7 @@ const sansFamily = `${sans},${baseFamily}`
 theme.font = sansFamily
 
 theme.styles = {
-  sans: { style: { fontFamily: sansFamily } },
+  medium: { style: { fontWeight: 500 } },
   headline: { f: [5, 6], color: 'black', style: { lineHeight: '1.125' } },
   subhline: {
     f: [3, 4],

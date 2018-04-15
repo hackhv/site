@@ -1,11 +1,11 @@
 {
-  "name": "Camp Lightbulb",
-  "title": "Camp Lightbulb",
+  "name": "Hack Happy Valley",
+  "title": "Hack Happy Valley – The first high school hackathon in Central PA",
   "description":
-    "Camp Lightbulb celebrates LGBTQ+ youth with magical, overnight camp experiences, filled with fun, pride, community, friends, support, self-discovery and memories to last a lifetime.",
-  "url": "https://camplightbulb.org",
-  "twitter": "@camplightbulb",
-  "img": "https://camplightbulb.org/logo.png",
+    "Register today for the new hackathon for high school students in State College, PA.",
+  "url": "https://hackhappyvalley.com",
+  "twitter": "@hackhv",
+  "img": "https://hackhappyvalley.com/logo.png",
   "urls": {
     "twitter": "https://twitter.com/camplightbulb",
     "instagram": "https://www.instagram.com/camplightbulb",
@@ -14,20 +14,20 @@
   "org": {
     "@context": "http://schema.org",
     "@type": "Organization",
-    "name": "Camp Lightbulb",
-    "url": "https://camplightbulb.org",
-    "logo": "https://camplightbulb.org/logo.png",
+    "name": "Hack Happy Valley",
+    "url": "https://hackhappyvalley.com",
+    "logo": "https://hackhappyvalley.com/logo.png",
     "sameAs": [
-      "https://twitter.com/camplightbulb",
-      "https://www.instagram.com/camplightbulb",
-      "https://www.facebook.com/camplightbulb"
+      "https://twitter.com/hackhv",
+      "https://www.instagram.com/hackhv",
+      "https://www.facebook.com/hackhv"
     ],
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "email": "camplightbulb@gmail.com",
+        "email": "contact@hackhappyvalley.com",
         "contactType": "customer support",
-        "url": "https://camplightbulb.org"
+        "url": "https://hackhappyvalley.com"
       }
     ]
   }

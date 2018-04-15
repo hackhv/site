@@ -10,10 +10,10 @@ const Flag = styled(Link).attrs({
   background-size: auto 100%;
   flex-shrink: 0;
   width: 36px;
-  height: 48px;
+  height: 36px;
   ${props => props.theme.mediaQueries.md} {
     width: 48px;
-    height: 64px;
+    height: 48px;
   }
 `
 

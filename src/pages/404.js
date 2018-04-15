@@ -1,27 +1,32 @@
 import React, { Fragment } from 'react'
-import { Heading, Container, LargeButton, Text } from '@hackclub/design-system'
+import { Heading, Flex, LargeButton, Text } from '@hackclub/design-system'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import Action from 'components/Action'
 import Nav from 'components/Nav'
 import Footer from 'components/Footer'
 
-LargeButton.link = LargeButton.withComponent(Link)
-
 export default () => (
   <Fragment>
-    <Helmet title="404 – Camp Lightbulb" />
-    <Nav color="primary" />
-    <Container maxWidth={48} px={2} py={6} align="center">
-      <Heading.h1 color="primary" f={[128, 256]}>
+    <Helmet title="404 – Happy Valley Hacks" />
+    <Nav bg="primary" />
+    <Flex
+      p={3}
+      flexDirection="column"
+      justify="center"
+      align="center"
+      bg="primary"
+      style={{ minHeight: '100vh' }}
+    >
+      <Heading.h1 color="white" f={[128, 256]}>
         404!
       </Heading.h1>
-      <Text f={4} mb={4} color="muted">
-        Maybe the Lightbulb went out…we couldn’t find that page.
+      <Text f={4} mt={-4} mb={4} color="white">
+        We couldn’t find that page.
       </Text>
-      <LargeButton.link to="/" bg="success">
+      <Action to="/" bg="altLight">
         Go Home 🏡
-      </LargeButton.link>
-    </Container>
+      </Action>
+    </Flex>
     <Footer />
   </Fragment>
 )

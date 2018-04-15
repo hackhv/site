@@ -1,18 +1,18 @@
 module.exports = {
   siteMetadata: {
-    name: 'Camp Lightbulb',
-    siteUrl: 'https://camplightbulb.lachlanjc.me'
+    name: 'Happy Valley Hacks',
+    siteUrl: 'https://happyvalleyhacks.com'
   },
   plugins: [
     'gatsby-plugin-resolve-src',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Camp Lightbulb',
-        short_name: 'Camp Lightbulb',
+        name: 'Happy Valley Hacks',
+        short_name: 'Happy Valley Hacks',
         start_url: '/',
         background_color: '#fff',
-        theme_color: '#ff0059',
+        theme_color: '#ff5a5f',
         display: 'minimal-ui'
       }
     },
