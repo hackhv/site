@@ -19,10 +19,11 @@ injectGlobal`
     margin: 0;
     padding: 0;
   }
+  h1 + h2,
   p > a,
   strong,
   b {
-    font-weight: 500;
+    font-weight: 500 !important;
   }
 `
 

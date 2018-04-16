@@ -47,16 +47,16 @@ const Leader = ({ name, ...props }) => (
 export default () => (
   <Fragment>
     <Nav />
-    <Box.header bg="alt" py={[5, 6]}>
+    <Box.header bg="alt" pt={6} pb={[5, 6]}>
       <Container maxWidth={48} color="white" px={3}>
         <Heading.h1 f={[6, 7]} mb={2}>
           About
         </Heading.h1>
-        <Heading.h2 f={[3, 4]} mb={[3, 4]} style={{ fontWeight: 500 }}>
+        <Heading.h2 f={[3, 4]} mb={4}>
           We’re trying to bring technology to the forefront of Central PA.
         </Heading.h2>
         <Action to="/register" bg="primary" f={[3, 4]}>
-          Register
+          Register »
         </Action>
       </Container>
     </Box.header>
@@ -97,7 +97,7 @@ export default () => (
           <Leader name="Lachlan Campbell" />
           <Leader name="Joy Liu" />
         </Leaders>
-        <Text {...theme.styles.subtext}>
+        <Text {...theme.styles.subtext} mb={4}>
           We know this because we’re the leaders of the{' '}
           <A href="https://hackclub.com" color="primary">
             Hack Club
@@ -106,10 +106,8 @@ export default () => (
           come to write their first code. Now, we want to bring that experience
           to everyone.
         </Text>
-      </Container>
-      <Container maxWidth={48} pt={[4, 5]} align="center">
         <Action to="/register" f={[3, 4]}>
-          Learn more »
+          Register »
         </Action>
       </Container>
     </Container>
