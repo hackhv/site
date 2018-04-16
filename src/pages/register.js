@@ -27,7 +27,7 @@ export default () => (
         my={3}
         bg="white"
         p={[3, 4]}
-        boxShadowSize="md"
+        boxShadowSize="lg"
       >
         <RegistrationForm />
       </Sheet>
