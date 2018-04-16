@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
 import {
-  Box,
-  Flex,
-  Text,
-  Heading,
-  BackgroundImage,
-  Container,
   Avatar,
-  Link as A
+  Box,
+  Button,
+  Container,
+  Flex,
+  Heading,
+  Link as A,
+  Text
 } from '@hackclub/design-system'
 import { theme } from 'theme'
 import Helmet from 'react-helmet'
@@ -26,22 +26,34 @@ const Grid = Box.extend`
   }
 `
 
-const Leaders = Box.extend`
-  max-width: 24rem;
-  margin: ${props => props.theme.space[4]}px auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: ${props => props.theme.space[2]}px;
+const Leaders = Grid.extend`
   p {
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.25;
   }
 `
+const EmailButton = Button.extend`
+  display: inline-flex;
+  align-items: center;
+  line-height: 1 !important;
+  font-weight: 500;
+`
+const username = a => a.split(' ')[0].toLowerCase()
 const Leader = ({ name, ...props }) => (
-  <Box align="center">
-    <Avatar src={`/team/${name.split(' ')[0].toLowerCase()}.jpg`} size={128} />
-    <Text mt={1} f={3} bold {...theme.styles.sans} children={name} />
-  </Box>
+  <Flex align="center">
+    <Avatar src={`/team/${username(name)}.jpg`} size={128} mr={3} />
+    <Box align="left">
+      <Text f={4} {...theme.styles.sans} children={name} />
+      <EmailButton
+        href={`mailto:${username(name)}@hackhappyvalley.com`}
+        bg="alt"
+        f={2}
+        mt={2}
+      >
+        <Text.span>Email</Text.span>
+      </EmailButton>
+    </Box>
+  </Flex>
 )
 
 export default () => (
@@ -93,7 +105,7 @@ export default () => (
           </Text.span>—it's a magical transformation. You can solve problems
           your way, bounded only by your imagination.
         </Text>
-        <Leaders>
+        <Leaders my={4}>
           <Leader name="Lachlan Campbell" />
           <Leader name="Joy Liu" />
         </Leaders>
