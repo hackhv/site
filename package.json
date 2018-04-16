@@ -13,7 +13,9 @@
   },
   "dependencies": {
     "@hackclub/design-system": "^0.0.1-9",
+    "airtable": "^0.5.3",
     "axios": "^0.18.0",
+    "formik": "^0.11.11",
     "gatsby": "^1.9.250",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-manifest": "^1.0.19",
@@ -29,7 +31,8 @@
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-helmet": "^5.2.0",
-    "styled-components": "^3.2.5"
+    "styled-components": "^3.2.5",
+    "yup": "^0.24.1"
   },
   "devDependencies": {
     "prettier": "^1.12.0"

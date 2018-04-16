@@ -27,6 +27,9 @@ export const colors = {
   cool: '#00bdde',
   coolWash: '#7cecff'
 }
+// for DS input
+colors.blue = [colors.altDark, colors.altLight, colors.altLight]
+colors.info = colors.alt
 
 theme.colors = colors
 
