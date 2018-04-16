@@ -21,9 +21,11 @@ injectGlobal`
   }
   h1 + h2,
   p > a,
-  strong,
   b {
     font-weight: 500 !important;
+  }
+  strong {
+    font-weight: 700 !important;
   }
 `
 

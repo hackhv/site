@@ -16,7 +16,7 @@ const Service = ({ href, icon, ...props }) => (
     target="_blank"
     rel="noopener"
     href={href}
-    mx={2}
+    mx={3}
     color="muted"
     title={icon}
     {...props}
@@ -43,7 +43,7 @@ const Footer = ({ children }) => (
     <Heading.h3 f={2} mb={3} align="center" caps>
       Follow Us
     </Heading.h3>
-    <Flex justify="center" mx={-2} wrap>
+    <Flex justify="center" wrap>
       <Service href={urls.twitter} icon="twitter" />
       <Service href={urls.instagram} icon="instagram" />
       <Service href={urls.facebook} icon="facebook" />
