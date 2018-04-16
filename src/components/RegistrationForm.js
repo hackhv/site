@@ -95,8 +95,14 @@ const InnerForm = ({
       <Field
         label="T-shirt size"
         placeholder="XS/S/M/L/XL"
+        type="select"
         {...field('shirtSize')}
-      />
+      >
+        <option value={null}>Select one…</option>
+        {['XS', 'S', 'M', 'L', 'XL'].map(n => (
+          <option key={n} value={n} children={n} />
+        ))}
+      </Field>
       <Box align="center" mt={3}>
         <Submit
           // disabled={isSubmitting}
