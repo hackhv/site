@@ -44,7 +44,7 @@ export default () => (
           The first high school hackathon in Central Pennsylvania.
         </Heading.h2>
         <Flex align="center" justify="center" my={4} wrap>
-          <Calendar mr={4}>
+          <Calendar mr={[null, 4]}>
             <Month children="June" />
             <Day children={2} />
           </Calendar>
