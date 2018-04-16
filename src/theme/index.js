@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { injectGlobal, ThemeProvider as Root } from 'styled-components'
 import config from './config'
 
@@ -29,7 +29,7 @@ injectGlobal`
 
 const ThemeProvider = props => (
   <Root theme={config}>
-    <div>{props.children}</div>
+    <Fragment>{props.children}</Fragment>
   </Root>
 )
 
