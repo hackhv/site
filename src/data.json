@@ -9,7 +9,8 @@
   "urls": {
     "twitter": "https://twitter.com/hackhv",
     "instagram": "https://www.instagram.com/hackhv",
-    "facebook": "https://www.facebook.com/hackhv"
+    "facebook": "https://www.facebook.com/hackhv",
+    "messenger": "https://m.me/hackhv"
   },
   "org": {
     "@context": "http://schema.org",
