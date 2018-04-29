@@ -11,6 +11,9 @@ injectGlobal`
     font-family: ${config.font};
     line-height: 1.5;
   }
+  h2 {
+    line-height: 1.5 !important;
+  }
   a {
     box-shadow: none;
     text-decoration: none;
