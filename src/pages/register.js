@@ -1,5 +1,13 @@
 import React, { Fragment } from 'react'
-import { Box, Flex, Heading, Container, Card } from '@hackclub/design-system'
+import {
+  Box,
+  Flex,
+  Heading,
+  Container,
+  Card,
+  Text,
+  Link
+} from '@hackclub/design-system'
 import { theme } from 'theme'
 import Helmet from 'react-helmet'
 import Nav from 'components/Nav'
@@ -32,6 +40,15 @@ export default () => (
           height={512}
           style={{ background: 'transparent' }}
         />
+      </Sheet>
+      <Sheet p={[2, 3]} bg="warmWash" maxWidth={28} mt={4} boxShadowSize="md">
+        <Text align="center">
+          Reminder: while we are not MLH-affiliated but you are required to
+          adhere to the{' '}
+          <Link href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">
+            MLH Code of Conduct
+          </Link>.
+        </Text>
       </Sheet>
     </Box>
     <Footer />
