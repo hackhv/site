@@ -3,10 +3,11 @@ import { Box, Flex, Heading, Container, Card } from '@hackclub/design-system'
 import { theme } from 'theme'
 import Helmet from 'react-helmet'
 import Nav from 'components/Nav'
-import RegistrationForm from 'components/RegistrationForm'
 import Footer from 'components/Footer'
 
-const Sheet = Card.withComponent(Container)
+const Sheet = Card.withComponent(Container).extend`
+  overflow: hidden;
+`
 
 export default () => (
   <Fragment>
@@ -21,15 +22,16 @@ export default () => (
           starting June 2 at noon.
         </Heading.h2>
       </Container>
-      <Sheet
-        maxWidth={48}
-        w={1}
-        my={3}
-        bg="white"
-        p={[3, 4]}
-        boxShadowSize="lg"
-      >
-        <RegistrationForm />
+      <Sheet maxWidth={48} w={1} my={3} bg="white" boxShadowSize="lg">
+        <iframe
+          className="airtable-embed"
+          src="https://airtable.com/embed/shrP7H89cwS21QrDX?backgroundColor=yellow"
+          frameBorder="0"
+          onMouseWheel=""
+          width="100%"
+          height={512}
+          style={{ background: 'transparent' }}
+        />
       </Sheet>
     </Box>
     <Footer />
