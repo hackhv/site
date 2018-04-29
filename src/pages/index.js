@@ -49,9 +49,11 @@ export default () => (
             <Day children={2} />
           </Calendar>
           <Text align={['center', 'left']} my={3} f={3}>
-            <strong>Time:</strong> noon–noon
+            <strong>Time:</strong> 12PM Saturday–12PM Sunday
             <br />
-            <strong>Location:</strong> coming soon
+            <strong>Location:</strong> State College, PA
+            <br />
+            <strong>Venue:</strong> Coming soon
           </Text>
         </Flex>
         <Action to="/register" bg="altLight" f={[3, 4]}>
