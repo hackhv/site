@@ -10,18 +10,28 @@ const Calendar = Flex.extend`
   flex-direction: column;
   flex-shrink: 0;
   text-align: center;
-  width: 96px;
-  height: 96px;
+  width: 72px;
+  height: 72px;
   border-color: ${props => props.theme.colors.white};
   border-style: solid;
-  border-width: 4px;
+  border-width: 6px;
   border-radius: 12px;
   font-weight: 700;
+  ${props => props.theme.mediaQueries.md} {
+    border-width: 4px;
+    width: 96px;
+    height: 96px;
+  }
 `
-const Month = Text.extend.attrs({ f: 3, py: 1, bg: 'white', color: 'primary' })`
+const Month = Text.extend.attrs({
+  f: 3,
+  py: [0, 1],
+  bg: 'white',
+  color: 'primary'
+})`
   line-height: 1;
 `
-const Day = Text.extend.attrs({ f: 6, color: 'white' })`
+const Day = Text.extend.attrs({ f: [5, 6], color: 'white' })`
   line-height: 1.5;
 `
 
@@ -29,27 +39,28 @@ export default () => (
   <Fragment>
     <Nav />
     <Flex
-      p={3}
+      px={2}
+      pb={5}
+      pt={[5, 6]}
       flexDirection="column"
       justify="center"
       align="center"
       bg="primary"
-      style={{ minHeight: '100vh' }}
     >
       <Container color="white" align="center" px={3}>
         <Heading.h1 f={[5, 6, 7]} mb={2}>
           Hack Happy Valley
         </Heading.h1>
-        <Heading.h2 f={[3, 4]} mb={4}>
+        <Heading.h2 f={[3, 4]}>
           The first high school hackathon in Central Pennsylvania.
         </Heading.h2>
-        <Flex align="center" justify="center" my={4} wrap>
-          <Calendar mr={[null, 4]}>
+        <Flex align="center" justify="center" my={[3, 4]}>
+          <Calendar mr={[3, 4]}>
             <Month children="June" />
             <Day children={2} />
           </Calendar>
-          <Text align={['center', 'left']} my={3} f={3}>
-            <strong>Time:</strong> 12PM Saturday–12PM Sunday
+          <Text align="left" my={3} f={[2, 3]}>
+            <strong>Time:</strong> 12PM Sat–12PM Sun
             <br />
             <strong>Location:</strong> State College, PA
             <br />
