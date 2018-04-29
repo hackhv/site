@@ -1,16 +1,16 @@
 import React, { Fragment } from 'react'
 import {
   Box,
-  Flex,
+  Text,
   Heading,
   Container,
   Card,
-  Text,
   Link
 } from '@hackclub/design-system'
 import { theme } from 'theme'
 import Helmet from 'react-helmet'
 import Nav from 'components/Nav'
+import Action from 'components/Action'
 import Footer from 'components/Footer'
 
 const Sheet = Card.withComponent(Container).extend`
@@ -23,12 +23,15 @@ export default () => (
     <Box px={3} py={[5, 6]} bg="warm">
       <Container maxWidth={36} color="white" align="center" px={3}>
         <Heading.h1 f={[6, 7]} mb={2}>
-          Register (free!)
+          Register
         </Heading.h1>
-        <Heading.h2 f={[3, 4]} mb={4}>
-          Come to an amazing high school hackathon in State College, PA,
-          starting June 2 at noon.
+        <Heading.h2 f={[3, 4]} m={0}>
+          It all starts June 2, 2018. The event is totally free, food and
+          registration included.
         </Heading.h2>
+        <Action href="mailto:contact@hackhappyvalley.com" bg="alt" my={4}>
+          Questions?
+        </Action>
       </Container>
       <Sheet maxWidth={48} w={1} my={3} bg="white" boxShadowSize="lg">
         <iframe
