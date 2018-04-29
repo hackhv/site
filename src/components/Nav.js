@@ -12,7 +12,7 @@ const Base = Box.extend.attrs({ py: 3, w: 1 })`
 const Inner = Container.withComponent('nav').extend.attrs({
   maxWidth: 48,
   px: 3,
-  role: 'naviation'
+  role: 'navigation'
 })`
   display: flex;
   justify-content: space-between;
@@ -31,7 +31,7 @@ const Nav = ({ color = 'white', ...props }) => (
       <Flag />
       <Box ml={3}>
         <Item to="/register" children="Register" />
-        <Item to="/about" children="About" />
+        <Item to="/sponsors" children="Sponsors" />
       </Box>
     </Inner>
   </Base>
