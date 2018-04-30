@@ -29,9 +29,9 @@ export default () => (
           It all starts June 2, 2018. The event is totally free, food and
           registration included.
         </Heading.h2>
-        <Action href="mailto:contact@hackhappyvalley.com" bg="alt" my={4}>
+        <Action.a href="mailto:contact@hackhappyvalley.com" bg="alt" my={4}>
           Questions?
-        </Action>
+        </Action.a>
       </Container>
       <Sheet maxWidth={48} w={1} my={3} bg="white" boxShadowSize="lg">
         <iframe
