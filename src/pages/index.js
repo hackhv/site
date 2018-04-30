@@ -139,8 +139,8 @@ export default () => (
         </Text>
         <Text {...theme.styles.subtext} mt={2} mb={4}>
           <Text.span bg="warmWash">
-            Happy Valley Hacks will be the first high school hackathon in
-            Central Pennsylvania
+            Hack Happy Valley will be the first high school hackathon in Central
+            Pennsylvania
           </Text.span>, bringing technology to the forefront of our community.
           100 students of all skill levels will assemble for a weekend of
           collaboration and innovation, each building apps/websites/games in 24

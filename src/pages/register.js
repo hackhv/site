@@ -46,8 +46,8 @@ export default () => (
       </Sheet>
       <Sheet p={[2, 3]} bg="warmWash" maxWidth={28} mt={4} boxShadowSize="md">
         <Text align="center">
-          Reminder: while we are not MLH-affiliated but you are required to
-          adhere to the{' '}
+          Reminder: while we are not MLH-affiliated, you are required to adhere
+          to the{' '}
           <Link href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">
             MLH Code of Conduct
           </Link>.
