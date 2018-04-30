@@ -7,7 +7,8 @@ import {
   Flex,
   Heading,
   Link as A,
-  Text
+  Text,
+  Card
 } from '@hackclub/design-system'
 import { theme } from 'theme'
 import Helmet from 'react-helmet'
@@ -45,7 +46,23 @@ const Day = Text.extend.attrs({ f: [5, 6], color: 'white' })`
   line-height: 1.5;
 `
 
-const Grid = Box.extend`
+const Questions = Container.extend.attrs({ maxWidth: 72 })`
+  display: grid;
+  grid-gap: ${props => props.theme.space[3]}px;
+  width: 100%;
+
+  ${props => props.theme.mediaQueries.sm} {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+`
+const Question = ({ name, body, ...props }) => (
+  <Card p={[3, 4]} bg="white" boxShadowSize="md" {...props}>
+    <Heading.h3 f={2} color="altDark" caps mt={0} mb={[1, 2]} children={name} />
+    <Text f={2} color="slate" my={0} children={body} />
+  </Card>
+)
+
+const Dual = Box.extend`
   display: grid;
   grid-gap: ${props => props.theme.space[3]}px;
   width: 100%;
@@ -55,7 +72,7 @@ const Grid = Box.extend`
   }
 `
 
-const Leaders = Grid.extend`
+const Leaders = Dual.extend`
   p {
     font-weight: 700;
     line-height: 1.25;
@@ -122,9 +139,42 @@ export default () => (
         </Action>
       </Container>
     </Flex>
+    <Box.section bg="alt" w={1}>
+      <Container py={[4, 5]} px={3}>
+        <Heading.h2 color="white" f={[5, 6]} mb={3} align="center">
+          FAQ
+        </Heading.h2>
+        <Questions>
+          <Question
+            name="Who can participate?"
+            body="Any current high school student! If you’re under/over the age limit, send us an email (below)."
+          />
+          <Question
+            name="What if I’m new to coding?"
+            body="Complete beginners are totally welcome! We’ll have workshops and assistance to get you going."
+          />
+          <Question
+            name="How much does it cost?"
+            body="Nothing, it’s totally free! Registration and attendance are free, with meals included."
+          />
+          <Question
+            name="Do I need a team?"
+            body="Nope! You’ll have an opportunity to meet fellow hackers, and make teams of up to 4, or you can work alone (though it’s discouraged)."
+          />
+          <Question
+            name="What can I make?"
+            body="Anything! A website, mobile app, game, hardware, you name it. Submissions will be judged for creativity, technical difficulty, polish, and utility by judges."
+          />
+          <Question
+            name="What should I bring?"
+            body="Bring a computer, chargers, anything you’ll need for your hack, like hardware, and (if you’d like) a sleeping bag/toiliteries."
+          />
+        </Questions>
+      </Container>
+    </Box.section>
     <Container py={[4, 5]}>
       <Container maxWidth={48} px={3}>
-        <Heading.h2 color="primary" f={[5, 6]} mb={3}>
+        <Heading.h2 color="primary" f={[5, 6]} mb={3} align="center">
           About
         </Heading.h2>
         <Heading.h3 f={[3, 4]} color="primary" caps>
@@ -171,10 +221,12 @@ export default () => (
           come to write their first code. Now, we want to bring that experience
           to everyone.
         </Text>
+      </Container>
+      <Box align="center">
         <Action to="/register" f={[3, 4]}>
           Register »
         </Action>
-      </Container>
+      </Box>
     </Container>
     <Footer />
   </Fragment>
