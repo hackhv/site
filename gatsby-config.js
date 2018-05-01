@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    name: 'Happy Valley Hacks',
-    siteUrl: 'https://happyvalleyhacks.com'
+    name: 'Hack Happy Valley',
+    siteUrl: 'http://hackhappyvalley.com'
   },
   plugins: [
     'gatsby-plugin-resolve-src',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Happy Valley Hacks',
-        short_name: 'Happy Valley Hacks',
+        name: 'Hack Happy Valley',
+        short_name: 'Hack Happy Valley',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#ff5a5f',
