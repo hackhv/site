@@ -52,11 +52,15 @@ const Questions = Container.extend.attrs({ maxWidth: 72 })`
   width: 100%;
 
   ${props => props.theme.mediaQueries.sm} {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+
+  > div {
+    background-color: rgba(255, 255, 255, 0.875);
   }
 `
 const Question = ({ name, body, ...props }) => (
-  <Card p={[3, 4]} bg="white" boxShadowSize="md" {...props}>
+  <Card p={[3, 4]} boxShadowSize="md" {...props}>
     <Heading.h3 f={2} color="altDark" caps mt={0} mb={[1, 2]} children={name} />
     <Text f={2} color="slate" my={0} children={body} />
   </Card>
@@ -159,7 +163,7 @@ export default () => (
           />
           <Question
             name="Do I need a team?"
-            body="Nope! You’ll have an opportunity to meet fellow hackers, and make teams of up to 4, or you can work alone (though it’s discouraged)."
+            body="Nope! You’ll have an opportunity to meet fellow hackers, and make teams of up to 4—you’ll likely meet new friends! Or you can work alone (though discouraged)."
           />
           <Question
             name="What can I make?"
@@ -167,7 +171,7 @@ export default () => (
           />
           <Question
             name="What should I bring?"
-            body="Bring a computer, chargers, anything you’ll need for your hack, like hardware, and (if you’d like) a sleeping bag/toiliteries."
+            body="Bring your student ID, a computer, chargers, anything you’ll need for your hack, like hardware, and (if you’d like) a sleeping bag/toiliteries."
           />
         </Questions>
       </Container>
