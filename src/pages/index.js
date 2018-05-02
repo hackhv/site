@@ -133,7 +133,7 @@ export default () => (
       bg="primary"
     >
       <Container color="white" align="center" px={3}>
-        <Heading.h1 f={[5, 6, 7]} mb={2}>
+        <Heading.h1 f={[6, 7]} mb={2}>
           Hack Happy Valley
         </Heading.h1>
         <Heading.h2 f={[3, 4]}>
@@ -158,18 +158,21 @@ export default () => (
       </Container>
     </Flex>
     <PhotoSection bg="alt" w={1} image="/lah_1.jpg">
-      <Container maxWidth={56} py={[4, 5, 6]} px={3} align="center">
+      <Container py={[4, 5, 6]} px={3} align="center">
         <Heading.h2 f={[5, 6]} mb={3}>
           24 hours of coding, free food, & fun.
         </Heading.h2>
-        <Text {...theme.styles.subhline} color="white">
-          A hackathon is a 24-hour coding competition. At Hack Happy Valley,
-          ~100 students will come from across Central Pennsylvania for the day.
-          You’ll work with a team (or by yourself) to build an app, game, or
-          website. We’ll have free food and drinks throughout, and you can sleep
-          (or not). At the end, a panel of judges will pick the best to demo for
-          the group.
-        </Text>
+        <Container maxWidth={48}>
+          <Text {...theme.styles.subhline} color="white">
+            A hackathon is a 24-hour coding competition. At Hack Happy Valley,
+            ~100 students will come from across Central PA for the day. You’ll
+            work with a team (or by yourself) to build an app, game, or website.
+            We’ll have free food & drinks, and you can sleep, or not. In the
+            morning, a group of judges will pick the best projects to demo for
+            everyone and win prizes. You’ll meet people, build something amazing
+            (it’ll be most attendees’ first time!), and have so much fun.
+          </Text>
+        </Container>
       </Container>
     </PhotoSection>
     <Box.section bg="alt" w={1}>
@@ -238,7 +241,7 @@ export default () => (
           switch from being a consumer to being a creator.{' '}
           <Text.span bg="warmWash">
             We want to make everyone a creator
-          </Text.span>—it's a magical transformation. You can solve problems
+          </Text.span>—it’s a magical transformation. You can solve problems
           your way, bounded only by your imagination.
         </Text>
         <Leaders my={4}>
@@ -252,7 +255,8 @@ export default () => (
           </A>{' '}
           at State College Area High School, where hundreds of students have
           come to write their first code. Now, we want to bring that experience
-          to everyone.
+          to everyone. This is a hackathon by the students, for the students,
+          and for the future of Pennsylvania.
         </Text>
       </Container>
       <Box align="center">
