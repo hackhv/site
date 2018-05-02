@@ -8,7 +8,8 @@ import {
   Heading,
   Link as A,
   Text,
-  Card
+  Card,
+  Section
 } from '@hackclub/design-system'
 import { theme } from 'theme'
 import Helmet from 'react-helmet'
@@ -44,6 +45,19 @@ const Month = Text.extend.attrs({
 `
 const Day = Text.extend.attrs({ f: [5, 6], color: 'white' })`
   line-height: 1.5;
+`
+
+const PhotoSection = Box.section.extend`
+  color: ${props => props.theme.colors.white};
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)),
+    url(${props => props.image});
+  background-position: center;
+  background-size: cover;
+  h2,
+  p {
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+  }
 `
 
 const Questions = Container.extend.attrs({ maxWidth: 72 })`
@@ -93,7 +107,7 @@ const Leader = ({ name, ...props }) => (
   <Flex align="center">
     <Avatar src={`/team/${username(name)}.jpg`} size={128} mr={3} />
     <Box align="left">
-      <Text f={4} {...theme.styles.sans} children={name} />
+      <Text f={4} children={name} />
       <EmailButton
         href={`mailto:${username(name)}@hackhappyvalley.com`}
         bg="alt"
@@ -143,6 +157,21 @@ export default () => (
         </Action>
       </Container>
     </Flex>
+    <PhotoSection bg="alt" w={1} image="/lah_1.jpg">
+      <Container maxWidth={56} py={[4, 5, 6]} px={3} align="center">
+        <Heading.h2 f={[5, 6]} mb={3}>
+          24 hours of coding, free food, & fun.
+        </Heading.h2>
+        <Text {...theme.styles.subhline} color="white">
+          A hackathon is a 24-hour coding competition. At Hack Happy Valley,
+          ~100 students will come from across Central Pennsylvania for the day.
+          You’ll work with a team (or by yourself) to build an app, game, or
+          website. We’ll have free food and drinks throughout, and you can sleep
+          (or not). At the end, a panel of judges will pick the best to demo for
+          the group.
+        </Text>
+      </Container>
+    </PhotoSection>
     <Box.section bg="alt" w={1}>
       <Container py={[4, 5]} px={3}>
         <Heading.h2 color="white" f={[5, 6]} mb={3} align="center">
