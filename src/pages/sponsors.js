@@ -39,9 +39,15 @@ export default () => (
         <Text f={[3, 4]} mb={4} regular>
           If you’re interested in getting involved as a sponsor, contact us!
         </Text>
-        <Action.a href="mailto:joy@hackhappyvalley.com" bg="primary" f={[3, 4]}>
+        <Action
+          is="a"
+          href="mailto:joy@hackhappyvalley.com"
+          bg="primary"
+          f={[3, 4]}
+          analytics="email"
+        >
           Email us
-        </Action.a>
+        </Action>
       </Container>
     </Box.header>
     <Container py={[4, 5]}>

@@ -158,8 +158,13 @@ export default () => (
             <strong>Venue:</strong> Coming soon
           </Text>
         </Flex>
-        <Action to="/register" bg="altLight" f={[3, 4]}>
-          Register »
+        <Action
+          to="/register"
+          bg="altLight"
+          f={[3, 4]}
+          analytics="primary register"
+        >
+          Register now »
         </Action>
       </Container>
     </Flex>
@@ -266,7 +271,7 @@ export default () => (
         </Text>
       </Container>
       <Box align="center">
-        <Action to="/register" f={[3, 4]}>
+        <Action to="/register" f={[3, 4]} analytics="secondary register">
           Register »
         </Action>
       </Box>
