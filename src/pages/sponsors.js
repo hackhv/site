@@ -15,6 +15,15 @@ import Nav from 'components/Nav'
 import Action from 'components/Action'
 import Footer from 'components/Footer'
 
+const Sponsors = Box.extend`
+  display: grid;
+  grid-gap: ${props => props.theme.space[3]}px;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  width: 100%;
+`
+
+const Sponsor = Box.withComponent('img')
+
 export default () => (
   <Fragment>
     <Nav />
@@ -35,6 +44,16 @@ export default () => (
         </Action.a>
       </Container>
     </Box.header>
+    <Container py={[4, 5]}>
+      <Container maxWidth={48} px={3}>
+        <Heading.h2 color="primary" f={[4, 5]} mb={3} align="center">
+          Our sponsors
+        </Heading.h2>
+        <Sponsors>
+          <Sponsor alt="Mike’s Video" src="/sponsors/mikes.png" />
+        </Sponsors>
+      </Container>
+    </Container>
     <Footer />
   </Fragment>
 )
