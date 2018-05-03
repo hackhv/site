@@ -2,10 +2,10 @@
   "name": "Hack Happy Valley",
   "title": "Hack Happy Valley – The first high school hackathon in Central PA",
   "description":
-    "Register today for the new hackathon for high school students in State College, PA.",
-  "url": "http://hackhappyvalley.com",
+    "Register today for a hackathon for high schoolers in State College, PA on June 2, 2018.",
+  "url": "https://hackhappyvalley.com",
   "twitter": "@hackhv",
-  "img": "http://hackhappyvalley.com/logo.png",
+  "img": "https://hackhappyvalley.com/logo.png",
   "urls": {
     "twitter": "https://twitter.com/hackhv",
     "instagram": "https://www.instagram.com/hackhv",
@@ -13,11 +13,11 @@
     "messenger": "https://m.me/hackhv"
   },
   "org": {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Hack Happy Valley",
-    "url": "http://hackhappyvalley.com",
-    "logo": "http://hackhappyvalley.com/logo.png",
+    "url": "https://hackhappyvalley.com",
+    "logo": "https://hackhappyvalley.com/logo.png",
     "sameAs": [
       "https://twitter.com/hackhv",
       "https://www.instagram.com/hackhv",
@@ -28,7 +28,7 @@
         "@type": "ContactPoint",
         "email": "contact@hackhappyvalley.com",
         "contactType": "customer support",
-        "url": "http://hackhappyvalley.com"
+        "url": "https://hackhappyvalley.com"
       }
     ]
   }
