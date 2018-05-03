@@ -4,7 +4,7 @@ import data from 'data.json'
 import ThemeProvider from 'theme'
 import { colors } from 'theme/config'
 
-const { name, title, description, img, url, org } = data
+const { name, title, description, img, url, org, event } = data
 
 const meta = tags =>
   tags.map((props, index) =>
@@ -39,6 +39,7 @@ export default props => (
       ])}
       <link rel="stylesheet" href="/fonts.css" />
       <script type="application/ld+json" children={JSON.stringify(org)} />
+      <script type="application/ld+json" children={JSON.stringify(event)} />
     </Helmet>
     {props.children()}
   </ThemeProvider>

@@ -31,5 +31,21 @@
         "url": "https://hackhappyvalley.com"
       }
     ]
+  },
+  "event": {
+    "@context": "http://schema.org/",
+    "@type": "Event",
+    "name": "Hack Happy Valley",
+    "description": "The first high school hackathon in Central Pennsylvania. 24 hours of coding, fun, free food, and prizes.",
+    "url": "https://hackhappyvalley.com",
+    "image": "https://hackhappyvalley.com/logo.png",
+    "sponsor": {
+      "@type": "Organization",
+      "name": "Hack Club",
+      "url": "https://hackclub.com"
+    },
+    "startDate": "2018-06-02T12:00",
+    "endDate": "2018-06-02T12:00",
+    "isAccessibleForFree": true
   }
 }
