@@ -122,6 +122,12 @@ const Leader = ({ name, ...props }) => (
 
 export default () => (
   <Fragment>
+    <Helmet>
+      <meta
+        name="google-site-verification"
+        content="CaaLuNaaYhXbn1s-kSfKI092j_VHDoqjxGt6fay58rc"
+      />
+    </Helmet>
     <Nav />
     <Flex
       px={2}
