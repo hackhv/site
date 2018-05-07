@@ -44,7 +44,9 @@ export default props => (
       <link rel="stylesheet" href="/fonts.css" />
       <script type="application/ld+json" children={JSON.stringify(org)} />
       <script type="application/ld+json" children={JSON.stringify(event)} />
-      <script dangerouslySetInnerHTML={{ __html: heap }} />
+      {process.env.NODE_ENV === 'production' && (
+        <script dangerouslySetInnerHTML={{ __html: heap }} />
+      )}
     </Helmet>
     {props.children()}
   </ThemeProvider>
