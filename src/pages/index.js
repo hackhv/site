@@ -105,7 +105,7 @@ const EmailButton = Button.extend`
 const username = a => a.split(' ')[0].toLowerCase()
 const Leader = ({ name, ...props }) => (
   <Flex align="center">
-    <Avatar src={`/team/${username(name)}.jpg`} size={128} mr={3} />
+    <Avatar src={`/team/${username(name)}.jpg`} alt={name} size={128} mr={3} />
     <Box align="left">
       <Text f={4} children={name} />
       <EmailButton

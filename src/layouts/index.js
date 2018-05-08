@@ -17,7 +17,7 @@ const heap = `
 
 export default props => (
   <ThemeProvider>
-    <Helmet defaultTitle={title} title={title}>
+    <Helmet title={title}>
       <html lang="en" />
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -29,6 +29,7 @@ export default props => (
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:description', content: description },
         { name: 'twitter:domain', content: url },
+        { name: 'twitter:site', content: url },
         { name: 'twitter:image', content: img },
         { name: 'twitter:title', content: title },
         { property: 'og:description', content: description },
@@ -44,7 +45,7 @@ export default props => (
       <link rel="stylesheet" href="/fonts.css" />
       <script type="application/ld+json" children={JSON.stringify(org)} />
       <script type="application/ld+json" children={JSON.stringify(event)} />
-      {process.env.NODE_ENV === 'production' && (
+      {process.env.NODE_ENV !== 'development' && (
         <script dangerouslySetInnerHTML={{ __html: heap }} />
       )}
     </Helmet>
