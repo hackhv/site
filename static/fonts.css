@@ -1,3 +1,4 @@
+/*
 @font-face {
   font-display: swap;
   font-family: Sailec;
@@ -5,6 +6,7 @@
   src: url(/fonts/light.woff2) format('woff2'),
     url(/fonts/light.woff) format('woff');
 }
+*/
 
 @font-face {
   font-display: swap;
