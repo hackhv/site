@@ -15,6 +15,7 @@ import {
 import { theme } from 'theme'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import Icon from 'spectrum-icons'
 import Nav from 'components/Nav'
 import Action from 'components/Action'
 import Module from 'components/Module'
@@ -131,11 +132,10 @@ const Dual = Box.extend`
   }
 `
 
-const Leaders = Dual.extend`
-  p {
-    font-weight: 700;
-    line-height: 1.25;
-  }
+const Leaders = Dual
+const LeaderName = Text.extend`
+  font-weight: 700;
+  line-height: 1.25;
 `
 const EmailButton = Button.extend`
   display: inline-flex;
@@ -144,18 +144,20 @@ const EmailButton = Button.extend`
   font-weight: 500;
 `
 const username = a => a.split(' ')[0].toLowerCase()
-const Leader = ({ name, ...props }) => (
+const Leader = ({ name, pronouns, ...props }) => (
   <Flex align="center">
     <Avatar src={`/team/${username(name)}.jpg`} alt={name} size={128} mr={3} />
     <Box align="left">
-      <Text f={4} children={name} />
+      <LeaderName f={4} children={name} />
+      <Text color="muted" f={2} mb={2} children={pronouns} />
       <EmailButton
         href={`mailto:${username(name)}@hackhappyvalley.com`}
-        bg="alt"
+        bg="cool"
         f={2}
         mt={2}
       >
-        <Text.span>Email</Text.span>
+        <Icon glyph="email" size={24} />
+        <Text.span ml={1}>Email</Text.span>
       </EmailButton>
     </Box>
   </Flex>
@@ -330,8 +332,8 @@ export default () => (
           your way, bounded only by your imagination.
         </Text>
         <Leaders my={4}>
-          <Leader name="Lachlan Campbell" />
-          <Leader name="Joy Liu" />
+          <Leader name="Lachlan Campbell" pronouns="they/them" />
+          <Leader name="Joy Liu" pronouns="she/her" />
         </Leaders>
         <Text {...theme.styles.subtext} mb={4}>
           We know this because we’re the leaders of the{' '}
