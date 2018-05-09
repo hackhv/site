@@ -9,13 +9,15 @@ import {
   Link as A,
   Text,
   Card,
-  Section
+  Section,
+  BackgroundImage
 } from '@hackclub/design-system'
 import { theme } from 'theme'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Nav from 'components/Nav'
 import Action from 'components/Action'
+import Module from 'components/Module'
 import Footer from 'components/Footer'
 
 const Calendar = Flex.extend`
@@ -47,16 +49,40 @@ const Day = Text.extend.attrs({ f: [5, 6], color: 'white' })`
   line-height: 1.5;
 `
 
-const PhotoSection = Box.section.extend`
-  color: ${props => props.theme.colors.white};
-  position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)),
-    url(${props => props.image});
-  background-position: center;
-  background-size: cover;
-  h2,
-  p {
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+const Grid = Box.extend`
+  display: grid;
+  grid-gap: ${props => props.theme.space[2]}px;
+  width: 100%;
+  > div {
+    width: 100%;
+    box-shadow: ${props => props.theme.boxShadows[2]};
+    border-radius: ${props => props.theme.radius};
+    max-width: 100%;
+  }
+  ${props => props.theme.mediaQueries.md} {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: ${props => props.theme.space[4]}px;
+  }
+`
+
+const Modules = Box.extend`
+  display: grid;
+  grid-gap: ${props => props.theme.space[3]}px;
+  ${props => props.theme.mediaQueries.md} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+`
+
+const Photo = BackgroundImage.extend.attrs({ role: 'img' })`
+  overflow: hidden;
+  transition: all 0.125s ease-out;
+  background-size: auto 100%;
+  &:hover {
+    background-size: auto 108%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+    background-size: cover !important;
   }
 `
 
@@ -71,10 +97,25 @@ const Questions = Container.extend.attrs({ maxWidth: 72 })`
 
   > div {
     background-color: rgba(255, 255, 255, 0.875);
+    transition: 0.125s ease-out all;
+    box-shadow: ${props => props.theme.boxShadows[1]};
+
+    h3 {
+      transition: 0.125s ease-out color;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: ${props => props.theme.boxShadows[2]};
+
+      h3 {
+        color: ${props => props.theme.colors.altLight};
+      }
+    }
   }
 `
 const Question = ({ name, body, ...props }) => (
-  <Card p={[3, 4]} boxShadowSize="md" {...props}>
+  <Card p={[3, 4]} {...props}>
     <Heading.h3 f={2} color="altDark" caps mt={0} mb={[1, 2]} children={name} />
     <Text f={2} color="slate" my={0} children={body} />
   </Card>
@@ -168,24 +209,57 @@ export default () => (
         </Action>
       </Container>
     </Flex>
-    <PhotoSection bg="alt" w={1} image="/lah_1.jpg">
-      <Container py={[4, 5, 6]} px={3} align="center">
-        <Heading.h2 f={[5, 6]} mb={3}>
-          24 hours of coding, free food, & fun.
+    <Container w={1} px={[3, 4, null, 2]} mt={5}>
+      <Box mx={0} mt={5} color="black">
+        <Heading.h2 f={[4, 5]} mb={2}>
+          24 hours of coding, fun, free food, & prizes.
         </Heading.h2>
-        <Container maxWidth={48}>
-          <Text {...theme.styles.subhline} color="white">
-            A hackathon is a 24-hour coding competition. At Hack Happy Valley,
-            ~100 students will come from across Central PA for the day. You’ll
-            work with a team (or by yourself) to build an app, game, or website.
-            We’ll have free food & drinks, and you can sleep, or not. In the
-            morning, a group of judges will pick the best projects to demo for
-            everyone and win prizes. You’ll meet people, build something amazing
-            (it’ll be most attendees’ first time!), and have so much fun.
+        <Container maxWidth={48} mx={0}>
+          <Text f={[3, 4]}>
+            Hack Happy Valley is a hackathon, a 24-hour coding competition. 100
+            students from across Central PA will come for the day. You’ll work
+            with a team (or by yourself) to build an app, game, or website.
+            We’ll have free food & drinks, and you can sleep in the middle, or
+            not. In the morning, a group of judges will pick the best projects
+            to demo for everyone and win prizes.{' '}
+            <Text.span bg="warmWash">
+              You’ll meet people, build something amazing, and have so much fun.
+            </Text.span>
           </Text>
         </Container>
-      </Container>
-    </PhotoSection>
+      </Box>
+      <Grid mt={4} mb={[4, 6]} color="white">
+        <Box bg="primary" p={[3, 4]}>
+          <Heading.h3 f={[4, 5]} my={0}>
+            You are welcome here.
+          </Heading.h3>
+          <Text f={3} mt={2}>
+            We’re open to all high schoolers, but aimed at girls and gender
+            minorities who are new to coding. Organized by a diverse team, we’re
+            serious about creating an all-inclusive space for attendees.
+          </Text>
+        </Box>
+        <Photo image="/lah_1.jpg" />
+        <Photo image="/lah_2.jpg" />
+        <Box bg="cool" p={[3, 4]}>
+          <Heading.h3 f={[4, 5]} my={0}>
+            A hackathon for everyone.
+          </Heading.h3>
+          <Modules w={1}>
+            <Module
+              icon="member-add"
+              heading="Beginner-oriented"
+              body="Most attendees will be new to coding, so we’ll have workshops and mentors to get you going."
+            />
+            <Module
+              icon="like"
+              heading="A safe space for all"
+              body="You’ll be in a friendly, safe environment, with diverse attendees, free of harassment."
+            />
+          </Modules>
+        </Box>
+      </Grid>
+    </Container>
     <Box.section bg="alt" w={1}>
       <Container py={[4, 5]} px={3}>
         <Heading.h2 color="white" f={[5, 6]} mb={3} align="center">
@@ -194,11 +268,11 @@ export default () => (
         <Questions>
           <Question
             name="Who can participate?"
-            body="Any current high school student! If you’re under/over the age limit, send us an email (below)."
+            body="Any current high school student! If you’re under/over that age, send us an email (below)."
           />
           <Question
             name="What if I’m new to coding?"
-            body="Complete beginners are totally welcome! We’ll have workshops and assistance to get you going."
+            body="Complete beginners are not only welcome, but expected! Learn as you go with our workshops and assistance."
           />
           <Question
             name="How much does it cost?"
