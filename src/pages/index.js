@@ -270,15 +270,15 @@ export default () => (
         <Questions>
           <Question
             name="Who can participate?"
-            body="Any current high school student! If you’re under/over that age, send us an email (below)."
+            body="Any current high school student! If you’re under/over that age, send us an email (below) and we’ll see what we can do."
           />
           <Question
             name="What if I’m new to coding?"
-            body="Complete beginners are not only welcome, but expected! Learn as you go with our workshops and assistance."
+            body="Complete beginners are not only welcome, but expected! Learn as you go with our starting workshops and mentors."
           />
           <Question
             name="How much does it cost?"
-            body="Nothing, it’s totally free! Registration and attendance are free, with meals included."
+            body="Nothing, it’s totally free! Registration and attendance are 100% free, with meals and drinks included."
           />
           <Question
             name="Do I need a team?"
@@ -290,7 +290,7 @@ export default () => (
           />
           <Question
             name="What should I bring?"
-            body="Bring your student ID, a computer, chargers, anything you’ll need for your hack, like hardware, and (if you’d like) a sleeping bag/toiliteries."
+            body="Bring your student ID, a computer, chargers, anything you’ll need for your hack (like hardware), toiliteries, and a sleeping bag (if you’ll sleep)."
           />
         </Questions>
       </Container>
