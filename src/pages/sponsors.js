@@ -19,10 +19,13 @@ const Sponsors = Box.extend`
   display: grid;
   grid-gap: ${props => props.theme.space[3]}px;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  align-items: center;
   width: 100%;
 `
 
-const Sponsor = Box.withComponent('img')
+const Sponsor = Box.withComponent('img').extend`
+  max-width: 16rem;
+`
 
 export default () => (
   <Fragment>
@@ -52,11 +55,12 @@ export default () => (
     </Box.header>
     <Container py={[4, 5]}>
       <Container maxWidth={48} px={3}>
-        <Heading.h2 color="primary" f={[4, 5]} mb={3} align="center">
+        <Heading.h2 color="primary" f={4} mb={3} align="center" caps>
           Our sponsors
         </Heading.h2>
         <Sponsors>
           <Sponsor alt="Mike’s Video" src="/sponsors/mikes.png" />
+          <Sponsor alt="Sketch" src="/sponsors/sketch.png" />
         </Sponsors>
       </Container>
     </Container>
