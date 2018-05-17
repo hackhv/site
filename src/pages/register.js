@@ -62,7 +62,7 @@ export default () => (
           Register
         </Heading.h1>
         <Heading.h2 f={[3, 4]} m={0}>
-          It all starts June 2, 2018. The event is totally free, food and
+          It all starts June 9, 2018. The event is totally free, food and
           registration included.
         </Heading.h2>
         <Action

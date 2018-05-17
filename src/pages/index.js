@@ -191,7 +191,7 @@ export default () => (
         <Flex align="center" justify="center" my={[3, 4]}>
           <Calendar mr={[3, 4]}>
             <Month children="June" />
-            <Day children={2} />
+            <Day children={9} />
           </Calendar>
           <Text align="left" my={3} f={[2, 3]}>
             <strong>Time:</strong> 12PM Sat–12PM Sun
