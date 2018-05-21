@@ -61,6 +61,7 @@ export default () => (
         <Sponsors>
           <Sponsor alt="Mike’s Video" src="/sponsors/mikes.png" />
           <Sponsor alt="Sketch" src="/sponsors/sketch.png" />
+          <Sponsor alt="Balsamiq" src="/sponsors/balsamiq.png" />
         </Sponsors>
       </Container>
     </Container>
