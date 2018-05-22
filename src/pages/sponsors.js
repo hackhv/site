@@ -20,6 +20,7 @@ const Sponsors = Box.extend`
   grid-gap: ${props => props.theme.space[3]}px;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   align-items: center;
+  justify-content: center;
   width: 100%;
 `
 
@@ -61,6 +62,7 @@ export default () => (
         <Sponsors>
           <Sponsor alt="Mike’s Video" src="/sponsors/mikes.png" />
           <Sponsor alt="Sketch" src="/sponsors/sketch.png" />
+          <Sponsor alt="Comcast" src="/sponsors/comcast.jpg" />
           <Sponsor alt="Balsamiq" src="/sponsors/balsamiq.png" />
         </Sponsors>
       </Container>
