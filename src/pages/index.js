@@ -290,7 +290,7 @@ export default () => (
           />
           <Question
             name="What should I bring?"
-            body="Bring your student ID, a computer, chargers, anything you’ll need for your hack (like hardware), toiliteries, and a sleeping bag (if you’ll sleep)."
+            body="Bring your student ID, a computer, chargers, anything you’ll need for your hack (like hardware), toiletries, and a sleeping bag (if you’ll sleep)."
           />
         </Questions>
       </Container>
