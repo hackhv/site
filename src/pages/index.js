@@ -27,12 +27,12 @@ const Calendar = Flex.extend`
   text-align: center;
   width: 72px;
   height: 72px;
-  border-color: ${props => props.theme.colors.white};
+  border-color: ${({ theme }) => theme.colors.white};
   border-style: solid;
   border-width: 6px;
   border-radius: 12px;
   font-weight: 700;
-  ${props => props.theme.mediaQueries.md} {
+  ${({ theme }) => theme.mediaQueries.md} {
     border-width: 4px;
     width: 96px;
     height: 96px;
@@ -52,24 +52,24 @@ const Day = Text.extend.attrs({ f: [5, 6], color: 'white' })`
 
 const Grid = Box.extend`
   display: grid;
-  grid-gap: ${props => props.theme.space[2]}px;
+  grid-gap: ${({ theme }) => theme.space[2]}px;
   width: 100%;
   > div {
     width: 100%;
-    box-shadow: ${props => props.theme.boxShadows[2]};
-    border-radius: ${props => props.theme.radius};
+    box-shadow: ${({ theme }) => theme.boxShadows[2]};
+    border-radius: ${({ theme }) => theme.radius};
     max-width: 100%;
   }
-  ${props => props.theme.mediaQueries.md} {
+  ${({ theme }) => theme.mediaQueries.md} {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: ${props => props.theme.space[4]}px;
+    grid-gap: ${({ theme }) => theme.space[4]}px;
   }
 `
 
 const Modules = Box.extend`
   display: grid;
-  grid-gap: ${props => props.theme.space[3]}px;
-  ${props => props.theme.mediaQueries.md} {
+  grid-gap: ${({ theme }) => theme.space[3]}px;
+  ${({ theme }) => theme.mediaQueries.md} {
     grid-template-columns: repeat(2, 1fr);
   }
 `
@@ -89,17 +89,17 @@ const Photo = BackgroundImage.extend.attrs({ role: 'img' })`
 
 const Questions = Container.extend.attrs({ maxWidth: 72 })`
   display: grid;
-  grid-gap: ${props => props.theme.space[3]}px;
+  grid-gap: ${({ theme }) => theme.space[3]}px;
   width: 100%;
 
-  ${props => props.theme.mediaQueries.sm} {
+  ${({ theme }) => theme.mediaQueries.sm} {
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
 
   > div {
     background-color: rgba(255, 255, 255, 0.875);
     transition: 0.125s ease-out all;
-    box-shadow: ${props => props.theme.boxShadows[1]};
+    box-shadow: ${({ theme }) => theme.boxShadows[1]};
 
     h3 {
       transition: 0.125s ease-out color;
@@ -107,10 +107,10 @@ const Questions = Container.extend.attrs({ maxWidth: 72 })`
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.95);
-      box-shadow: ${props => props.theme.boxShadows[2]};
+      box-shadow: ${({ theme }) => theme.boxShadows[2]};
 
       h3 {
-        color: ${props => props.theme.colors.altLight};
+        color: ${({ theme }) => theme.colors.altLight};
       }
     }
   }
@@ -124,10 +124,10 @@ const Question = ({ name, body, ...props }) => (
 
 const Dual = Box.extend`
   display: grid;
-  grid-gap: ${props => props.theme.space[3]}px;
+  grid-gap: ${({ theme }) => theme.space[3]}px;
   width: 100%;
 
-  ${props => props.theme.mediaQueries.md} {
+  ${({ theme }) => theme.mediaQueries.md} {
     grid-template-columns: repeat(2, 1fr);
   }
 `
@@ -218,7 +218,7 @@ export default () => (
         </Heading.h2>
         <Container maxWidth={48} mx={0}>
           <Text f={[3, 4]}>
-            Hack Happy Valley is a hackathon, a 24-hour coding competition. 100
+            Hack Happy Valley is a hackathon, a 24-hour coding competition. 30
             students from across Central PA will come for the day. You’ll work
             with a team (or by yourself) to build an app, game, or website.
             We’ll have free food & drinks, and you can sleep in the middle, or
@@ -282,7 +282,7 @@ export default () => (
           />
           <Question
             name="Do I need a team?"
-            body="Nope! You’ll have an opportunity to meet fellow hackers, and make teams of up to 4—you’ll likely meet new friends! Or you can work alone (though discouraged)."
+            body="Nope! You’ll have an opportunity to meet fellow hackers, and make teams of up to 3—you’ll likely meet new friends! Or you can work alone (though discouraged)."
           />
           <Question
             name="What can I make?"
@@ -315,7 +315,7 @@ export default () => (
             Hack Happy Valley will be the first high school hackathon in Central
             Pennsylvania
           </Text.span>, bringing technology to the forefront of our community.
-          100 students of all skill levels will assemble for a weekend of
+          30 students of all skill levels will assemble for a weekend of
           collaboration and innovation, each building apps/websites/games in 24
           hours. Then participants and judges will select the winning projects
           and teams.
