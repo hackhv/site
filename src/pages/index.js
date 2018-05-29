@@ -193,13 +193,16 @@ export default () => (
             <Month children="June" />
             <Day children={2} />
           </Calendar>
-          <Text align="left" my={3} f={[2, 3]}>
-            <strong>Time:</strong> 12PM Sat–12PM Sun
-            <br />
-            <strong>Location:</strong> State College, PA
-            <br />
-            <strong>Venue:</strong> Coming soon
-          </Text>
+          <Box align="left" my={3}>
+            <Text f={[2, 3]}>
+              <strong>Time:</strong> 12PM Sat–12PM Sun
+              <br />
+              <strong>Location:</strong> State College, PA
+              <br />
+              <strong>Venue:</strong> Church of the Good Shepherd
+            </Text>
+            <Text>867 Gray’s Woods Blvd, Port Matilda, PA 16870</Text>
+          </Box>
         </Flex>
         <Action
           to="/register"
@@ -243,7 +246,7 @@ export default () => (
         </Box>
         <Photo image="/lah_1.jpg" />
         <Photo image="/lah_2.jpg" />
-        <Box bg="cool" p={[3, 4]}>
+        <Box bg="altLight" p={[3, 4]}>
           <Heading.h3 f={[4, 5]} my={0}>
             A hackathon for everyone.
           </Heading.h3>
