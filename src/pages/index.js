@@ -214,7 +214,7 @@ export default () => (
         </Action>
       </Container>
     </Flex>
-    <Container w={1} px={[3, 4, null, 2]} mt={5}>
+    <Container w={1} px={[3, 4, null, 2]} mt={5} mb={[4, 5]}>
       <Box mx={0} mt={5} color="black">
         <Heading.h2 f={[4, 5]} mb={2}>
           24 hours of coding, fun, free food, & prizes.
@@ -233,7 +233,7 @@ export default () => (
           </Text>
         </Container>
       </Box>
-      <Grid mt={4} mb={[4, 6]} color="white">
+      <Grid mt={4} color="white">
         <Box bg="primary" p={[3, 4]}>
           <Heading.h3 f={[4, 5]} my={0}>
             You are welcome here.
@@ -264,6 +264,9 @@ export default () => (
           </Modules>
         </Box>
       </Grid>
+      <Text mt={4} color="muted" f={2} align="center">
+        Photos taken by Janet Fang @ Los Altos Hacks
+      </Text>
     </Container>
     <Box.section bg="alt" w={1}>
       <Container py={[4, 5]} px={3}>
