@@ -56,18 +56,18 @@ const ShareButton = ({ children, ...props }) => (
 export default () => (
   <Fragment>
     <Nav />
-    <Box px={3} pt={[5, 6]} pb={5} bg="warm">
+    <Box px={3} pt={[5, 6]} pb={5} bg="cool">
       <Container maxWidth={36} color="white" align="center" px={3}>
         <Heading.h1 f={[6, 7]} mb={2}>
           Register
         </Heading.h1>
         <Heading.h2 f={[3, 4]} m={0}>
-          It all starts June 2, 2018. The event is totally free, food and
-          registration included.
+          It all starts June 2, 2018. The event is totally free, lots of food,
+          drinks, and prizes included.
         </Heading.h2>
         <Action
           href="mailto:contact@hackhappyvalley.com"
-          bg="alt"
+          bg="warm"
           my={4}
           is="a"
           analytics="email"
@@ -86,13 +86,23 @@ export default () => (
           style={{ background: 'transparent' }}
         />
       </Sheet>
+      <Container px={[2, 3]} mt={5} mb={4} maxWidth={28}>
+        <Text color="white" align="center">
+          You must adhere to the{' '}
+          <Link color="white" underline href="https://conduct.hackclub.com">
+            Hack Club Code of Conduct
+          </Link>{' '}
+          and complete the{' '}
+          <Link color="white" underline href="/liability.pdf">
+            liability consent form
+          </Link>.
+        </Text>
+      </Container>
       <Sheet
         p={[3, 4]}
-        bg="warmWash"
+        bg="coolWash"
         align="center"
         maxWidth={24}
-        mt={5}
-        mb={4}
         boxShadowSize="md"
       >
         <Heading.h2 f={3} caps mb={2}>
@@ -109,18 +119,6 @@ export default () => (
         />
         <ShareButton service="Facebook" href={facebookURL(url)} bg="#3b5998" />
       </Sheet>
-      <Container px={[2, 3]} maxWidth={28}>
-        <Text color="slate" align="center">
-          Reminder: we are not MLH-affiliated, but you are required to adhere to
-          the{' '}
-          <Link
-            color="altLight"
-            href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-          >
-            MLH Code of Conduct
-          </Link>.
-        </Text>
-      </Container>
     </Box>
     <Footer />
   </Fragment>
