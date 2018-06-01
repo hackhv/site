@@ -216,10 +216,10 @@ export default () => (
     </Flex>
     <Container w={1} px={[3, 4, null, 2]} mt={5} mb={[4, 5]}>
       <Box mx={0} mt={5} color="black">
-        <Heading.h2 f={[4, 5]} mb={2}>
-          24 hours of coding, fun, free food, & prizes.
-        </Heading.h2>
-        <Container maxWidth={48} mx={0}>
+        <Container maxWidth={48}>
+          <Heading.h2 f={[4, 5]} mb={2}>
+            24 hours of coding, fun, free food, & prizes.
+          </Heading.h2>
           <Text f={[3, 4]}>
             Hack Happy Valley is a hackathon, a 24-hour coding competition. 30
             students from across Central PA will come for the day. You’ll work
