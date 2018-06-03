@@ -10,7 +10,8 @@ import {
   Text,
   Card,
   Section,
-  BackgroundImage
+  BackgroundImage,
+  LargeButton
 } from '@hackclub/design-system'
 import { theme } from 'theme'
 import Helmet from 'react-helmet'
