@@ -212,6 +212,14 @@ export default () => (
         >
           Register now »
         </Action>
+        <LargeButton
+          href="https://docs.google.com/forms/d/e/1FAIpQLScQTaUKnw2P1_NFqMfjEcP-XI8cuMVvJIi-72kAq_WG3kzUjA/viewform?usp=sf_link"
+          bg="warm"
+          f={[3, 4]}
+          mx={3}
+        >
+          Feedback survey
+        </LargeButton>
       </Container>
     </Flex>
     <Container w={1} px={[3, 4, null, 2]} mt={5} mb={[4, 5]}>
