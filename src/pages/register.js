@@ -57,12 +57,13 @@ export default () => (
   <Fragment>
     <Nav />
     <Box px={3} pt={[5, 6]} pb={5} bg="cool">
-      <Container maxWidth={48} color="white" align="center" px={3}>
-        <Heading.h1 f={[5, 6]} mb={2}>
-          Registration is now closed.
+      <Container maxWidth={36} color="white" align="center" px={3}>
+        <Heading.h1 f={[6, 7]} mb={2}>
+          Register
         </Heading.h1>
         <Heading.h2 f={[3, 4]} m={0}>
-          Thanks to all who came!
+          The event is totally free, lots of food, drinks, and prizes included.
+          Date and location TBA!
         </Heading.h2>
         <Action
           href="mailto:contact@hackhappyvalley.com"
@@ -77,7 +78,7 @@ export default () => (
       <Sheet maxWidth={48} w={1} my={3} bg="white" boxShadowSize="lg">
         <iframe
           className="airtable-embed"
-          src="https://airtable.com/embed/shrP7H89cwS21QrDX?backgroundColor=yellow"
+          src="https://airtable.com/embed/shrWQRJCYtqWLA88J?backgroundColor=yellow"
           frameBorder="0"
           onMouseWheel=""
           width="100%"

@@ -21,10 +21,6 @@ import Action from 'components/Action'
 import Module from 'components/Module'
 import Footer from 'components/Footer'
 
-const When = Flex.extend`
-  filter: blur(6px);
-`
-
 const Calendar = Flex.extend`
   flex-direction: column;
   flex-shrink: 0;
@@ -190,29 +186,25 @@ export default () => (
           Hack Happy Valley
         </Heading.h1>
         <Heading.h2 f={[3, 4]}>
-          The first high school hackathon in Central Pennsylvania.
+          Central Pennsylvania’s high school hackathon, now bigger and better.
         </Heading.h2>
-        <When align="center" justify="center" my={[3, 4]}>
+        <Flex align="center" justify="center" my={[3, 4]}>
           <Calendar mr={[3, 4]}>
-            <Month children="June" />
-            <Day children={2} />
+            <Month children="Fall" />
+            <Day children="??" />
           </Calendar>
           <Box align="left" my={3}>
             <Text f={[2, 3]}>
+              {/*
               <strong>Time:</strong> 12PM Sat–12PM Sun
               <br />
+              */}
               <strong>Location:</strong> State College, PA
               <br />
-              <strong>Venue:</strong> Church of the Good Shepherd
+              <strong>Venue:</strong> TBA
             </Text>
-            <Text>867 Gray’s Woods Blvd, Port Matilda, PA 16870</Text>
           </Box>
-        </When>
-        <Text f={3}>
-          <strong>Our event was a success!</strong> We’ll be holding another
-          this fall/winter.
-        </Text>
-        {/*
+        </Flex>
         <Action
           to="/register"
           bg="altLight"
@@ -221,7 +213,6 @@ export default () => (
         >
           Register now »
         </Action>
-        */}
       </Container>
     </Flex>
     <Container w={1} px={[3, 4, null, 2]} mt={5} mb={[4, 5]}>
@@ -231,7 +222,7 @@ export default () => (
             24 hours of coding, fun, free food, & prizes.
           </Heading.h2>
           <Text f={[3, 4]}>
-            Hack Happy Valley is a hackathon, a 24-hour coding competition. 30
+            Hack Happy Valley is a hackathon, a 24-hour coding competition. 50
             students from across Central PA will come for the day. You’ll work
             with a team (or by yourself) to build an app, game, or website.
             We’ll have free food & drinks, and you can sleep in the middle, or
@@ -331,7 +322,7 @@ export default () => (
             Hack Happy Valley will be the first high school hackathon in Central
             Pennsylvania
           </Text.span>, bringing technology to the forefront of our community.
-          30 students of all skill levels will assemble for a weekend of
+          50 students of all skill levels will assemble for a weekend of
           collaboration and innovation, each building apps/websites/games in 24
           hours. Then participants and judges will select the winning projects
           and teams.
@@ -362,13 +353,11 @@ export default () => (
           and for the future of Pennsylvania.
         </Text>
       </Container>
-      {/*
       <Box align="center">
         <Action to="/register" f={[3, 4]} analytics="secondary register">
           Register »
         </Action>
       </Box>
-      */}
     </Container>
     <Footer />
   </Fragment>
