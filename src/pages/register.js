@@ -57,13 +57,12 @@ export default () => (
   <Fragment>
     <Nav />
     <Box px={3} pt={[5, 6]} pb={5} bg="cool">
-      <Container maxWidth={36} color="white" align="center" px={3}>
-        <Heading.h1 f={[6, 7]} mb={2}>
-          Register
+      <Container maxWidth={48} color="white" align="center" px={3}>
+        <Heading.h1 f={[5, 6]} mb={2}>
+          Registration is now closed.
         </Heading.h1>
         <Heading.h2 f={[3, 4]} m={0}>
-          It all starts June 2, 2018. The event is totally free, lots of food,
-          drinks, and prizes included.
+          Thanks to all who came!
         </Heading.h2>
         <Action
           href="mailto:contact@hackhappyvalley.com"

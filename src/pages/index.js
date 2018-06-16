@@ -21,6 +21,10 @@ import Action from 'components/Action'
 import Module from 'components/Module'
 import Footer from 'components/Footer'
 
+const When = Flex.extend`
+  filter: blur(6px);
+`
+
 const Calendar = Flex.extend`
   flex-direction: column;
   flex-shrink: 0;
@@ -188,7 +192,7 @@ export default () => (
         <Heading.h2 f={[3, 4]}>
           The first high school hackathon in Central Pennsylvania.
         </Heading.h2>
-        <Flex align="center" justify="center" my={[3, 4]}>
+        <When align="center" justify="center" my={[3, 4]}>
           <Calendar mr={[3, 4]}>
             <Month children="June" />
             <Day children={2} />
@@ -203,7 +207,12 @@ export default () => (
             </Text>
             <Text>867 Gray’s Woods Blvd, Port Matilda, PA 16870</Text>
           </Box>
-        </Flex>
+        </When>
+        <Text f={3}>
+          <strong>Our event was a success!</strong> We’ll be holding another
+          this fall/winter.
+        </Text>
+        {/*
         <Action
           to="/register"
           bg="altLight"
@@ -212,6 +221,7 @@ export default () => (
         >
           Register now »
         </Action>
+        */}
       </Container>
     </Flex>
     <Container w={1} px={[3, 4, null, 2]} mt={5} mb={[4, 5]}>
@@ -352,11 +362,13 @@ export default () => (
           and for the future of Pennsylvania.
         </Text>
       </Container>
+      {/*
       <Box align="center">
         <Action to="/register" f={[3, 4]} analytics="secondary register">
           Register »
         </Action>
       </Box>
+      */}
     </Container>
     <Footer />
   </Fragment>
