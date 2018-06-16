@@ -30,7 +30,7 @@ const Nav = ({ color = 'white', ...props }) => (
     <Inner color={color} py={[1, 0]}>
       <Flag />
       <Box ml={3}>
-        <Item to="/register" children="Register" />
+        <Item to="/recap" children="Recap" />
         <Item to="/sponsors" children="Sponsors" />
       </Box>
     </Inner>

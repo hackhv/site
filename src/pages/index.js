@@ -19,6 +19,7 @@ import Icon from 'spectrum-icons'
 import Nav from 'components/Nav'
 import Action from 'components/Action'
 import Module from 'components/Module'
+import Photo from 'components/Photo'
 import Footer from 'components/Footer'
 
 const Calendar = Flex.extend`
@@ -71,19 +72,6 @@ const Modules = Box.extend`
   grid-gap: ${({ theme }) => theme.space[3]}px;
   ${({ theme }) => theme.mediaQueries.md} {
     grid-template-columns: repeat(2, 1fr);
-  }
-`
-
-const Photo = BackgroundImage.extend.attrs({ role: 'img' })`
-  overflow: hidden;
-  transition: all 0.125s ease-out;
-  background-size: auto 100%;
-  &:hover {
-    background-size: auto 108%;
-  }
-  @media (prefers-reduced-motion: reduce) {
-    transition: none;
-    background-size: cover !important;
   }
 `
 
@@ -245,8 +233,8 @@ export default () => (
             serious about creating an all-inclusive space for attendees.
           </Text>
         </Box>
-        <Photo image="/lah_1.jpg" />
-        <Photo image="/lah_2.jpg" />
+        <Photo image="/home_1.jpg" />
+        <Photo image="/home_2.jpg" />
         <Box bg="altLight" p={[3, 4]}>
           <Heading.h3 f={[4, 5]} my={0}>
             A hackathon for everyone.
@@ -266,7 +254,7 @@ export default () => (
         </Box>
       </Grid>
       <Text mt={4} color="muted" f={2} align="center">
-        Photos taken by Janet Fang @ Los Altos Hacks
+        Right photo taken by Janet Fang @ Los Altos Hacks
       </Text>
     </Container>
     <Box.section bg="alt" w={1}>

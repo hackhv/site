@@ -13,20 +13,8 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Nav from 'components/Nav'
 import Action from 'components/Action'
+import Sponsors from 'components/Sponsors'
 import Footer from 'components/Footer'
-
-const Sponsors = Box.extend`
-  display: grid;
-  grid-gap: ${props => props.theme.space[3]}px;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-`
-
-const Sponsor = Box.withComponent('img').extend`
-  max-width: 16rem;
-`
 
 export default () => (
   <Fragment>
@@ -55,19 +43,10 @@ export default () => (
       </Container>
     </Box.header>
     <Container py={[4, 5]}>
-      <Container maxWidth={48} px={3}>
-        <Heading.h2 color="primary" f={4} mb={3} align="center" caps>
-          Our sponsors
-        </Heading.h2>
-        <Sponsors>
-          <Sponsor alt="Mike’s Video" src="/sponsors/mikes.png" />
-          <Sponsor alt="Minitab" src="/sponsors/minitab.png" />
-          <Sponsor alt="Sketch" src="/sponsors/sketch.png" />
-          <Sponsor alt="Ben Franklin" src="/sponsors/ben-franklin.jpg" />
-          <Sponsor alt="Comcast" src="/sponsors/comcast.jpg" />
-          <Sponsor alt="Balsamiq" src="/sponsors/balsamiq.png" />
-        </Sponsors>
-      </Container>
+      <Heading.h2 color="primary" f={4} mb={3} align="center" caps>
+        Our sponsors
+      </Heading.h2>
+      <Sponsors />
     </Container>
     <Footer />
   </Fragment>
