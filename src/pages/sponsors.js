@@ -61,6 +61,7 @@ export default () => (
         </Heading.h2>
         <Sponsors>
           <Sponsor alt="Mike’s Video" src="/sponsors/mikes.png" />
+          <Sponsor alt="Minitab" src="/sponsors/minitab.png" />
           <Sponsor alt="Sketch" src="/sponsors/sketch.png" />
           <Sponsor alt="Ben Franklin" src="/sponsors/ben-franklin.jpg" />
           <Sponsor alt="Comcast" src="/sponsors/comcast.jpg" />
