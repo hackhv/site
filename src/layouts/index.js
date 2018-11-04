@@ -16,7 +16,7 @@ const heap = `
 `
 
 export default props => (
-  <ThemeProvider>
+  <ThemeProvider webfonts>
     <Helmet title={title}>
       <html lang="en" />
       <meta charSet="UTF-8" />
