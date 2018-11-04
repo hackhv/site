@@ -1,6 +1,6 @@
 # Hack Happy Valley
 
-[happyvalleyhacks.com](https://happyvalleyhacks.com)
+[hackhappyvalley.com](https://hackhappyvalley.com)
 
 ## Contributing
 
