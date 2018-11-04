@@ -8,48 +8,16 @@ import {
   Heading,
   Link as A,
   Text,
-  Card,
-  Section,
-  BackgroundImage
+  Card
 } from '@hackclub/design-system'
 import { theme } from 'theme'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 import Icon from 'spectrum-icons'
 import Nav from 'components/Nav'
 import Action from 'components/Action'
 import Module from 'components/Module'
 import Photo from 'components/Photo'
 import Footer from 'components/Footer'
-
-const Calendar = Flex.extend`
-  flex-direction: column;
-  flex-shrink: 0;
-  text-align: center;
-  width: 72px;
-  height: 72px;
-  border-color: ${({ theme }) => theme.colors.white};
-  border-style: solid;
-  border-width: 6px;
-  border-radius: 12px;
-  font-weight: 700;
-  ${({ theme }) => theme.mediaQueries.md} {
-    border-width: 4px;
-    width: 96px;
-    height: 96px;
-  }
-`
-const Month = Text.extend.attrs({
-  f: 3,
-  py: [0, 1],
-  bg: 'white',
-  color: 'primary'
-})`
-  line-height: 1;
-`
-const Day = Text.extend.attrs({ f: [5, 6], color: 'white' })`
-  line-height: 1.5;
-`
 
 const Grid = Box.extend`
   display: grid;
@@ -173,33 +141,22 @@ export default () => (
         <Heading.h1 f={[6, 7]} mb={2}>
           Hack Happy Valley
         </Heading.h1>
-        <Heading.h2 f={[3, 4]}>
-          Central Pennsylvania’s high school hackathon, now bigger and better.
-        </Heading.h2>
-        <Flex align="center" justify="center" my={[3, 4]}>
-          <Calendar mr={[3, 4]}>
-            <Month children="Fall" />
-            <Day children="??" />
-          </Calendar>
-          <Box align="left" my={3}>
-            <Text f={[2, 3]}>
-              {/*
-              <strong>Time:</strong> 12PM Sat–12PM Sun
-              <br />
-              */}
-              <strong>Location:</strong> State College, PA
-              <br />
-              <strong>Venue:</strong> TBA
-            </Text>
-          </Box>
-        </Flex>
+        <Container maxWidth={48}>
+          <Heading.h2 f={[3, 4]} mb={4}>
+            <Text.span bg="warm">New!</Text.span> Hack Happy Valley is now Hack
+            Pennsylvania, PA’s largest high school hackathon. We’re building a
+            200-person event in State College, PA. Below is our old site.
+          </Heading.h2>
+        </Container>
         <Action
-          to="/register"
+          href="https://hackpenn.com"
+          is="a"
           bg="altLight"
           f={[3, 4]}
           analytics="primary register"
+          scale
         >
-          Register now »
+          Check out the new event »
         </Action>
       </Container>
     </Flex>

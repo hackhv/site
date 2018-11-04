@@ -1,16 +1,13 @@
 import React, { Fragment } from 'react'
 import {
   Box,
-  Text,
   Heading,
   Container,
   Card,
-  Link,
-  Button
+  Button,
+  Text
 } from '@hackclub/design-system'
-import { theme } from 'theme'
 import { lowerCase } from 'lodash'
-import Helmet from 'react-helmet'
 import Nav from 'components/Nav'
 import Action from 'components/Action'
 import Footer from 'components/Footer'
@@ -19,7 +16,7 @@ const Sheet = Card.withComponent(Container).extend`
   overflow: hidden;
 `
 
-const url = 'http://hackhappyvalley.com/'
+const url = 'http://hackpenn.com/'
 const twitterURL = (text, u = url) =>
   `https://twitter.com/intent/tweet?text=${text
     .split(' ')
@@ -62,41 +59,19 @@ export default () => (
           Register
         </Heading.h1>
         <Heading.h2 f={[3, 4]} m={0}>
-          The event is totally free, lots of food, drinks, and prizes included.
-          Date and location TBA!
+          <Text.span bg="warm">Heads up!</Text.span> Hack Happy Valley is now
+          Hack Pennsylvania, PA’s largest high school hackathon. Registration
+          has moved there.
         </Heading.h2>
         <Action
-          href="mailto:contact@hackhappyvalley.com"
+          href="https://hackpenn.com"
           bg="warm"
           my={4}
           is="a"
           analytics="email"
         >
-          Questions?
+          Check out the new event »
         </Action>
-      </Container>
-      <Sheet maxWidth={48} w={1} my={3} bg="white" boxShadowSize="lg">
-        <iframe
-          className="airtable-embed"
-          src="https://airtable.com/embed/shrWQRJCYtqWLA88J?backgroundColor=yellow"
-          frameBorder="0"
-          onMouseWheel=""
-          width="100%"
-          height={512}
-          style={{ background: 'transparent' }}
-        />
-      </Sheet>
-      <Container px={[2, 3]} mt={5} mb={4} maxWidth={28}>
-        <Text color="white" align="center">
-          You must adhere to the{' '}
-          <Link color="white" underline href="https://conduct.hackclub.com">
-            Hack Club Code of Conduct
-          </Link>{' '}
-          and complete the{' '}
-          <Link color="white" underline href="/liability.pdf">
-            liability consent form
-          </Link>.
-        </Text>
       </Container>
       <Sheet
         p={[3, 4]}
@@ -111,7 +86,7 @@ export default () => (
         <ShareButton
           service="Twitter"
           href={twitterURL(
-            'I just signed up for @hackhv, the first high school hackathon in PA.',
+            'Check out @hackpenn, PA’s largest high school hackathon!',
             url
           )}
           bg="#1da1f2"
