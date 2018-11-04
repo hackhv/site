@@ -1,4 +1,4 @@
-# Happy Valley Hacks
+# Hack Happy Valley
 
 [happyvalleyhacks.com](https://happyvalleyhacks.com)
 
