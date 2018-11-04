@@ -298,10 +298,10 @@ export default () => (
           and for the future of Pennsylvania.
         </Text>
       </Container>
-      <Box align="center">
-        <Action to="/register" f={[3, 4]} analytics="secondary register">
-          Register »
-        </Action>
+      <Box align="center" mt={4}>
+        <a href="https://hackclub.com/bank">
+          <img src="/sponsors/hackclub-bank.svg" alt="Hack Club Bank" />
+        </a>
       </Box>
     </Container>
     <Footer />
