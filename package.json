@@ -1,5 +1,5 @@
 {
-  "name": "@hackhappyvalley/site",
+  "name": "@hackhv/site",
   "description": "coming soon",
   "version": "0.0.1",
   "author": "Lachlan Campbell <lachlan@hackclub.com>",
@@ -12,7 +12,7 @@
     "fmt": "prettier \"{src/**,}/*.js\" --single-quote --no-semi --write"
   },
   "dependencies": {
-    "@hackclub/design-system": "^0.0.1-9",
+    "@hackclub/design-system": "0.0.1-9",
     "airtable": "^0.5.3",
     "axios": "^0.18.0",
     "formik": "^0.11.11",
@@ -35,6 +35,7 @@
     "react-helmet": "^5.2.0",
     "spectrum-icons": "^0.0.2",
     "styled-components": "^3.2.6",
+    "styled-system": "1.1.7",
     "yup": "^0.24.1"
   },
   "devDependencies": {
