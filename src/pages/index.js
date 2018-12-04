@@ -143,9 +143,9 @@ export default () => (
         </Heading.h1>
         <Container maxWidth={48}>
           <Heading.h2 f={[3, 4]} mb={4}>
-            <Text.span bg="warm">New!</Text.span> Hack Happy Valley is now Hack
-            Pennsylvania, PA’s largest high school hackathon. We’re building a
-            200-person event in State College, PA. Below is our old site.
+            <Text.span bg="warm" px={1}>New!</Text.span> Hack Happy Valley is now
+            Hack Pennsylvania a 200-person event in State College in January.
+            Below is our old site.
           </Heading.h2>
         </Container>
         <Action
@@ -156,7 +156,7 @@ export default () => (
           analytics="primary register"
           scale
         >
-          Check out the new event »
+          Pennsylvania’s largest high school hackathon »
         </Action>
       </Container>
     </Flex>
