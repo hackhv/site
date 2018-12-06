@@ -45,9 +45,6 @@ export default () => (
         <Heading.h2 f={[3, 4]} m={0}>
           See some photos from our spring event—it was a huge success!
         </Heading.h2>
-        <Action to="/register" bg="cool" my={4}>
-          Register for fall
-        </Action>
       </Container>
     </Box>
     <Grid py={[4, 5]}>
