@@ -19,7 +19,6 @@ const Sponsors = props => (
     <Sponsor alt="Minitab" src="/sponsors/minitab.png" />
     <Sponsor alt="Sketch" src="/sponsors/sketch.png" />
     <Sponsor alt="Ben Franklin" src="/sponsors/ben-franklin.jpg" />
-    <Sponsor alt="Comcast" src="/sponsors/comcast.jpg" />
     <Sponsor alt="Balsamiq" src="/sponsors/balsamiq.png" />
   </Base>
 )
