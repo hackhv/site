@@ -144,7 +144,7 @@ export default () => (
         <Container maxWidth={48}>
           <Heading.h2 f={[3, 4]} mb={4}>
             <Text.span bg="warm" px={1}>New!</Text.span> Hack Happy Valley is now
-            Hack Pennsylvania a 200-person event in State College in January.
+            Hack Pennsylvania—a 200-person event in State College in January.
             Below is our old site.
           </Heading.h2>
         </Container>
