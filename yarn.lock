@@ -4,7 +4,7 @@
 
 "@hackclub/design-system@0.0.1-9":
   version "0.0.1-9"
-  resolved "http://registry.npmjs.org/@hackclub/design-system/-/design-system-0.0.1-9.tgz#6e857471fb59eef02cdfd5e0d75c0c7f707a36fb"
+  resolved "https://registry.npmjs.org/@hackclub/design-system/-/design-system-0.0.1-9.tgz#6e857471fb59eef02cdfd5e0d75c0c7f707a36fb"
   dependencies:
     lodash "^4.17.5"
     palx "1.0.2"
@@ -218,7 +218,7 @@ are-we-there-yet@~1.1.2:
 
 arg@2.0.0:
   version "2.0.0"
-  resolved "http://registry.npmjs.org/arg/-/arg-2.0.0.tgz#c06e7ff69ab05b3a4a03ebe0407fac4cba657545"
+  resolved "https://registry.npmjs.org/arg/-/arg-2.0.0.tgz#c06e7ff69ab05b3a4a03ebe0407fac4cba657545"
 
 argparse@^1.0.7:
   version "1.0.10"
@@ -1993,8 +1993,8 @@ combined-stream@1.0.6, combined-stream@^1.0.5, combined-stream@~1.0.5:
     delayed-stream "~1.0.0"
 
 command-exists@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/command-exists/-/command-exists-1.2.2.tgz#12819c64faf95446ec0ae07fe6cafb6eb3708b22"
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/command-exists/-/command-exists-1.2.8.tgz#715acefdd1223b9c9b37110a149c6392c2852291"
 
 commander@2.9.0, commander@2.9.x:
   version "2.9.0"
@@ -5996,7 +5996,7 @@ opn@5.2.0, opn@^5.1.0:
 
 opn@5.3.0:
   version "5.3.0"
-  resolved "http://registry.npmjs.org/opn/-/opn-5.3.0.tgz#64871565c863875f052cfdf53d3e3cb5adb53b1c"
+  resolved "https://registry.npmjs.org/opn/-/opn-5.3.0.tgz#64871565c863875f052cfdf53d3e3cb5adb53b1c"
   dependencies:
     is-wsl "^1.1.0"
 
@@ -8664,7 +8664,7 @@ styled-components@^3.2.6:
 
 styled-system@1.1.7, styled-system@^1.1.4:
   version "1.1.7"
-  resolved "http://registry.npmjs.org/styled-system/-/styled-system-1.1.7.tgz#b9b6906aaec41b9c79f40780e07dc39b81fe93fb"
+  resolved "https://registry.npmjs.org/styled-system/-/styled-system-1.1.7.tgz#b9b6906aaec41b9c79f40780e07dc39b81fe93fb"
   dependencies:
     prop-types "^15.6.0"
 
