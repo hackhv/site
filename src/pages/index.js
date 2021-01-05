@@ -12,7 +12,7 @@ import {
 } from '@hackclub/design-system'
 import { theme } from 'theme'
 import Helmet from 'react-helmet'
-import Icon from 'spectrum-icons'
+import Icon from '@hackclub/icons'
 import Nav from 'components/Nav'
 import Action from 'components/Action'
 import Module from 'components/Module'
@@ -107,7 +107,7 @@ const Leader = ({ name, pronouns, ...props }) => (
       <LeaderName f={4} children={name} />
       <Text color="muted" f={2} mb={2} children={pronouns} />
       <EmailButton
-        href={`mailto:${username(name)}@hackhappyvalley.com`}
+        href={`mailto:${username(name)}@hackpenn.com`}
         bg="cool"
         f={2}
         mt={2}

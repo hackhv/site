@@ -2,7 +2,7 @@
   "name": "@hackhv/site",
   "description": "coming soon",
   "version": "0.0.1",
-  "author": "Lachlan Campbell <lachlan@hackclub.com>",
+  "author": "Lachlan Campbell <lachlan@hackpenn.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -31,7 +31,6 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-helmet": "^5.2.0",
-    "spectrum-icons": "^0.0.2",
     "styled-components": "^3.2.6",
     "styled-system": "1.1.7",
     "yup": "^0.24.1"

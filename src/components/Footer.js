@@ -54,11 +54,11 @@ const Footer = ({ children }) => (
       <A
         aria-label="Email us"
         color="muted"
-        href="mailto:contact@hackhappyvalley.com"
         ml={2}
       >
         <Icon size={36} glyph="email" />
       </A>
+        href="mailto:lachlan@hackpenn.com"
     </Flex>
   </Box.footer>
 )

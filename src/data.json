@@ -1,8 +1,7 @@
 {
   "name": "Hack Happy Valley 2018",
   "title": "Hack Happy Valley – High school hackathon in Central PA",
-  "description":
-    "A free hackathon for high schoolers in State College, PA that happened June 2, 2018. 24 hours of coding, fun, free food, and prizes.",
+  "description": "A free hackathon for high schoolers in State College, PA that happened June 2, 2018. 24 hours of coding, fun, free food, and prizes.",
   "url": "https://hackhappyvalley.com",
   "twitter": "@hackhv",
   "img": "https://hackhappyvalley.com/logo.png",
@@ -26,7 +25,7 @@
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "email": "contact@hackhappyvalley.com",
+        "email": "lachlan@hackpenn.com",
         "contactType": "customer support",
         "url": "https://hackhappyvalley.com"
       }
