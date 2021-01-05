@@ -34,18 +34,10 @@ module.exports = {
         }
       }
     },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-45778683-3',
-        head: true
-      }
-    },
     'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-next',
-    'gatsby-plugin-netlify',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-netlify'
   ]
 }
