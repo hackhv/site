@@ -1,6 +1,6 @@
 # Hack Happy Valley
 
-[hackhappyvalley.com](https://hackhappyvalley.com)
+[hackhappyvalley.com](https://hackhappyvalley.com) — the first hackathon in Central PA, June 2018
 
 ## Contributing
 
