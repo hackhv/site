@@ -1,19 +1,11 @@
 import React, { Fragment } from 'react'
 import {
   Box,
-  Text,
   Heading,
   Container,
-  Card,
-  Link,
-  Button
 } from '@hackclub/design-system'
-import { theme } from 'theme'
-import { lowerCase } from 'lodash'
-import Helmet from 'react-helmet'
 import Nav from 'components/Nav'
 import Photo from 'components/Photo'
-import Action from 'components/Action'
 import Sponsors from 'components/Sponsors'
 import Footer from 'components/Footer'
 

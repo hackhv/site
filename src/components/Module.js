@@ -1,6 +1,6 @@
 import React from 'react'
 import { Flex, Box, Heading, Text } from '@hackclub/design-system'
-import Icon from 'spectrum-icons'
+import Icon from '@hackclub/icons'
 import PropTypes from 'prop-types'
 
 const Module = ({ icon, heading, body, ...props }) => (

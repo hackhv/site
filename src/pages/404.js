@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Heading, Flex, LargeButton, Text } from '@hackclub/design-system'
+import { Heading, Flex, Text } from '@hackclub/design-system'
 import Helmet from 'react-helmet'
 import Action from 'components/Action'
 import Nav from 'components/Nav'
@@ -7,7 +7,7 @@ import Footer from 'components/Footer'
 
 export default () => (
   <Fragment>
-    <Helmet title="404 – Happy Valley Hacks" />
+    <Helmet title="404 – Hack Happy Valley" />
     <Nav bg="primary" />
     <Flex
       p={3}
