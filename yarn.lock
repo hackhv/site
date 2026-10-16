@@ -15,6 +15,11 @@
     styled-components "^3.1.6"
     styled-system "^1.1.4"
 
+"@hackclub/icons@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.npmjs.org/@hackclub/icons/-/icons-0.2.2.tgz#e6a002874bde8cac7f57fcd2eefa05173cb4a6c8"
+  integrity sha512-dfcTgjrkep22tbCRpNHlbqIpKAxyXIHLlHJEXwP5e95/t1NUTsyKW8fXzAbIDrgrtUhyLiL7seYKzXz30mgYRg==
+
 "@types/configstore@^2.1.1":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@types/configstore/-/configstore-2.1.1.tgz#cd1e8553633ad3185c3f2f239ecff5d2643e92b6"
@@ -8215,6 +8220,11 @@ spdx-expression-parse@^3.0.0:
 spdx-license-ids@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-3.0.0.tgz#7a7cd28470cc6d3a1cfe6d66886f6bc430d3ac87"
+
+spectrum-icons@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.npmjs.org/spectrum-icons/-/spectrum-icons-0.0.3.tgz#fb6dd5e7522f34e8ad1130588010c56e09ba484f"
+  integrity sha512-f0B8vSHQ/YoYXdAEY5lzKKY6RHd9Oug7sZW0O6kgCm6KgKd8EZKfAXMbRiZOm5/aRVFRmBYBqZp2C/7wPwk5Fg==
 
 split-string@^3.0.1, split-string@^3.0.2:
   version "3.1.0"
