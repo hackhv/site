@@ -2,9 +2,9 @@
   "name": "Hack Happy Valley 2018",
   "title": "Hack Happy Valley – High school hackathon in Central PA",
   "description": "A free hackathon for high schoolers in State College, PA that happened June 2, 2018. 24 hours of coding, fun, free food, and prizes.",
-  "url": "https://hackhappyvalley.com",
+  "url": "https://happyvalley.hackpenn.com",
   "twitter": "@hackhv",
-  "img": "https://hackhappyvalley.com/logo.png",
+  "img": "https://happyvalley.hackpenn.com/logo.png",
   "urls": {
     "twitter": "https://twitter.com/hackhv",
     "instagram": "https://www.instagram.com/hackhv",
@@ -15,8 +15,8 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Hack Happy Valley",
-    "url": "https://hackhappyvalley.com",
-    "logo": "https://hackhappyvalley.com/logo.png",
+    "url": "https://happyvalley.hackpenn.com",
+    "logo": "https://happyvalley.hackpenn.com/logo.png",
     "sameAs": [
       "https://twitter.com/hackhv",
       "https://www.instagram.com/hackhv",
@@ -27,7 +27,7 @@
         "@type": "ContactPoint",
         "email": "lachlan@hackpenn.com",
         "contactType": "customer support",
-        "url": "https://hackhappyvalley.com"
+        "url": "https://happyvalley.hackpenn.com"
       }
     ]
   },
@@ -36,8 +36,8 @@
     "@type": "Event",
     "name": "Hack Happy Valley",
     "description": "The first high school hackathon in Central Pennsylvania. 24 hours of coding, fun, free food, and prizes.",
-    "url": "https://hackhappyvalley.com",
-    "image": "https://hackhappyvalley.com/logo.png",
+    "url": "https://happyvalley.hackpenn.com",
+    "image": "https://happyvalley.hackpenn.com/logo.png",
     "sponsor": {
       "@type": "Organization",
       "name": "Hack Club",

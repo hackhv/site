@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     name: 'Hack Happy Valley',
-    siteUrl: 'http://hackhappyvalley.com'
+    siteUrl: 'https://happyvalley.hackpenn.com'
   },
   plugins: [
     'gatsby-plugin-resolve-src',
