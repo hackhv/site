@@ -1,0 +1,24 @@
+# Redirect the old primary domain to the new subdomain home.
+[[redirects]]
+  from = "https://hackhappyvalley.com/*"
+  to = "https://happyvalley.hackpenn.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.hackhappyvalley.com/*"
+  to = "https://happyvalley.hackpenn.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://hackhappyvalley.com/*"
+  to = "https://happyvalley.hackpenn.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.hackhappyvalley.com/*"
+  to = "https://happyvalley.hackpenn.com/:splat"
+  status = 301
+  force = true
