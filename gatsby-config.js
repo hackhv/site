@@ -6,17 +6,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-resolve-src',
     {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'Hack Happy Valley',
-        short_name: 'Hack Happy Valley',
-        start_url: '/',
-        background_color: '#fff',
-        theme_color: '#ff5a5f',
-        display: 'minimal-ui'
-      }
-    },
-    {
       resolve: 'gatsby-plugin-favicon',
       options: {
         logo: './static/favicon.png',
